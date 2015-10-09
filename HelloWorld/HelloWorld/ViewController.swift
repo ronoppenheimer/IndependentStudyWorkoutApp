@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         
     }
     
+    func timerStop() {
+        timer.invalidate()
+        timerRunning = false
+    }
     
     @IBAction func startButton(sender: UIButton) {
         if timerRunning == false
@@ -38,12 +42,12 @@ class ViewController: UIViewController {
     @IBAction func stopButton(sender: UIButton) {
         if timerRunning == true
         {
-            timer.invalidate()
-            timerRunning = false
+            timerStop()
         }
     }
     
     @IBAction func restartButton(sender: UIButton) {
+        timerStop()
         timerCount = 60
         timerLabel.text = "60"
     }
