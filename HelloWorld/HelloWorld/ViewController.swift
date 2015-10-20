@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var timerCount = 60
     var timerRunning = false
     var timer = NSTimer()
+    var startStopButtonPressed = false
 
     @IBOutlet var nameLabel: UILabel!
     
@@ -29,22 +30,28 @@ class ViewController: UIViewController {
     func timerStop() {
         timer.invalidate()
         timerRunning = false
+        
     }
     
     @IBAction func startButton(sender: UIButton) {
-        if timerRunning == false
+        if timerRunning == false && startStopButtonPressed == false
         {
             timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
             timerRunning = true
+            startStopButtonPressed = true
+            sender.setTitle("Stop", forState: UIControlState.Normal)
         }
     }
 
     @IBAction func stopButton(sender: UIButton) {
-        if timerRunning == true
+        if timerRunning == true && startStopButtonPressed == false
         {
             timerStop()
+            startStopButtonPressed == true
+            sender.setTitle("Start", forState: UIControlState.Normal)
         }
     }
+
     
     @IBAction func restartButton(sender: UIButton) {
         timerStop()
