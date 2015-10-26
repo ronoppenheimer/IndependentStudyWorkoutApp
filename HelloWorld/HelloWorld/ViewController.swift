@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import AVFoundation
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -15,17 +15,18 @@ class ViewController: UIViewController {
     var timerRunning = false
     var timer = NSTimer()
 
-    //var audioPlayer = AVAudioPlayer()
-//    var audioPlayer: AVAudioPlayer
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view, typically from a nib.
-//    }
-//    
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+    var audioPlayer = AVAudioPlayer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     
     @IBOutlet var nameLabel: UILabel!
     
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         if timerCount > 0 {
         timerCount -= 1
         timerLabel.text = "\(timerCount)"
+        audioPlayer.play()
         }
         
     }
@@ -45,12 +47,42 @@ class ViewController: UIViewController {
         
     }
     
+    func playSound() {
+        
+        // Set the sound file name & extension
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Tick", ofType: "mp3")!)
+        
+        do {
+            // Preperation
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
+        
+        // Play the sound
+        var error: NSError?
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
+        } catch var error1 as NSError {
+            error = error1
+            //    audioPlayer = nil
+        }
+        audioPlayer.prepareToPlay()
+        
+        
+        
+    }
+    
     @IBAction func startButton(sender: UIButton) {
         if timerRunning == false
         {
             timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
             timerRunning = true
             sender.setTitle("Stop", forState: UIControlState.Normal)
+            playSound()
         }
         else
         {
@@ -58,14 +90,6 @@ class ViewController: UIViewController {
             sender.setTitle("Start", forState: UIControlState.Normal)
         }
         
-    }
-
-    @IBAction func stopButton(sender: UIButton) {
-        if timerRunning == true
-        {
-            //timerStop()
-            //sender.setTitle("Start", forState: UIControlState.Normal)
-        }
     }
 
     

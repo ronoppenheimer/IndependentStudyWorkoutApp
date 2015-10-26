@@ -105,7 +105,7 @@
 				A73810821BBA17E2002E2CE1 /* Assets.xcassets */,
 				A73810841BBA17E2002E2CE1 /* LaunchScreen.storyboard */,
 				A73810871BBA17E2002E2CE1 /* Info.plist */,
-				AF21DB3F1BD93E2E001760AD /* Tick.mp3 */,
+				AF21DB411BDED2BE001760AD /* Supporting Files */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -126,6 +126,14 @@
 				A738109D1BBA17E2002E2CE1 /* Info.plist */,
 			);
 			path = HelloWorldUITests;
+			sourceTree = "<group>";
+		};
+		AF21DB411BDED2BE001760AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF21DB3F1BD93E2E001760AD /* Tick.mp3 */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
