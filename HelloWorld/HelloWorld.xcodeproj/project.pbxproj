@@ -14,6 +14,7 @@
 		A73810861BBA17E2002E2CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73810841BBA17E2002E2CE1 /* LaunchScreen.storyboard */; };
 		A73810911BBA17E2002E2CE1 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73810901BBA17E2002E2CE1 /* HelloWorldTests.swift */; };
 		A738109C1BBA17E2002E2CE1 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738109B1BBA17E2002E2CE1 /* HelloWorldUITests.swift */; };
+		AF21DB401BD93E2E001760AD /* Tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF21DB3F1BD93E2E001760AD /* Tick.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A73810971BBA17E2002E2CE1 /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A738109B1BBA17E2002E2CE1 /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		A738109D1BBA17E2002E2CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF21DB3F1BD93E2E001760AD /* Tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tick.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A73810821BBA17E2002E2CE1 /* Assets.xcassets */,
 				A73810841BBA17E2002E2CE1 /* LaunchScreen.storyboard */,
 				A73810871BBA17E2002E2CE1 /* Info.plist */,
+				AF21DB3F1BD93E2E001760AD /* Tick.mp3 */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73810861BBA17E2002E2CE1 /* LaunchScreen.storyboard in Resources */,
+				AF21DB401BD93E2E001760AD /* Tick.mp3 in Resources */,
 				A73810831BBA17E2002E2CE1 /* Assets.xcassets in Resources */,
 				A73810811BBA17E2002E2CE1 /* Main.storyboard in Resources */,
 			);
@@ -483,6 +487,7 @@
 				A73810A21BBA17E2002E2CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A73810A31BBA17E2002E2CE1 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				A73810A51BBA17E2002E2CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A73810A61BBA17E2002E2CE1 /* Build configuration list for PBXNativeTarget "HelloWorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				A73810A81BBA17E2002E2CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

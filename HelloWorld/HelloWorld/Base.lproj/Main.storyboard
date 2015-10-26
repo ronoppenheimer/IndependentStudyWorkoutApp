@@ -44,21 +44,10 @@
                                 </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69U-LY-wzN"/>
-                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLL-uZ-Wpo"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aki-6a-TuP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDk-kq-oN6">
-                                <rect key="frame" x="20" y="493" width="280" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="vaj-pO-fV3"/>
-                                </constraints>
-                                <state key="normal" title="Stop"/>
-                                <connections>
-                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5UO-kr-pfR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-tl-YPU">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-tl-YPU">
                                 <rect key="frame" x="20" y="530" width="280" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="46b-qA-Tgd"/>
@@ -84,16 +73,12 @@
                             <constraint firstItem="O8F-tl-YPU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7C3-YW-zdk"/>
                             <constraint firstItem="O8F-tl-YPU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E3T-sf-NnM"/>
                             <constraint firstItem="wg0-cd-Xei" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EX1-0a-wdW"/>
-                            <constraint firstItem="nDk-kq-oN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ErF-ZG-bV8"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Exn-T5-EA8"/>
                             <constraint firstItem="wg0-cd-Xei" firstAttribute="top" secondItem="G8D-1B-ram" secondAttribute="bottom" constant="198" id="MX5-GX-dFJ"/>
                             <constraint firstItem="bIv-ze-1Ck" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R3K-fF-mGa"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VTd-6Y-pIW"/>
-                            <constraint firstItem="nDk-kq-oN6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="awF-Qw-L3O"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dtz-wa-Ius"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="top" secondItem="I5s-Ey-YfS" secondAttribute="bottom" constant="8" id="e8g-Hv-NUm"/>
-                            <constraint firstItem="O8F-tl-YPU" firstAttribute="top" secondItem="nDk-kq-oN6" secondAttribute="bottom" constant="7" id="feN-wp-D3U"/>
-                            <constraint firstItem="nDk-kq-oN6" firstAttribute="top" secondItem="wg0-cd-Xei" secondAttribute="bottom" constant="8" id="nZW-FU-Ext"/>
                             <constraint firstItem="wg0-cd-Xei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q2Z-sM-IN6"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rXJ-Yk-vMA"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tuk-sm-67g"/>
