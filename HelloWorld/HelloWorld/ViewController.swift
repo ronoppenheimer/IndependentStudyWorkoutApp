@@ -101,6 +101,7 @@ class ViewController: UIViewController {
 
     @IBAction func helloWorldAction(nameTextField: UITextField) {
         nameLabel.text = "Hi \(nameTextField.text!)"
+        nameTextField.hidden = true
     }
 
 }
