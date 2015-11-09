@@ -15,6 +15,8 @@
 		A73810911BBA17E2002E2CE1 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73810901BBA17E2002E2CE1 /* HelloWorldTests.swift */; };
 		A738109C1BBA17E2002E2CE1 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738109B1BBA17E2002E2CE1 /* HelloWorldUITests.swift */; };
 		AF21DB401BD93E2E001760AD /* Tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF21DB3F1BD93E2E001760AD /* Tick.mp3 */; settings = {ASSET_TAGS = (); }; };
+		AF43483B1BF1337600CED8C2 /* countdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43483A1BF1337600CED8C2 /* countdownViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AF43483D1BF134DD00CED8C2 /* exerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43483C1BF134DD00CED8C2 /* exerciseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A738109B1BBA17E2002E2CE1 /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		A738109D1BBA17E2002E2CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF21DB3F1BD93E2E001760AD /* Tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tick.mp3; sourceTree = "<group>"; };
+		AF43483A1BF1337600CED8C2 /* countdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countdownViewController.swift; sourceTree = "<group>"; };
+		AF43483C1BF134DD00CED8C2 /* exerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				A738107B1BBA17E2002E2CE1 /* AppDelegate.swift */,
 				A738107D1BBA17E2002E2CE1 /* ViewController.swift */,
+				AF43483A1BF1337600CED8C2 /* countdownViewController.swift */,
+				AF43483C1BF134DD00CED8C2 /* exerciseViewController.swift */,
 				A738107F1BBA17E2002E2CE1 /* Main.storyboard */,
 				A73810821BBA17E2002E2CE1 /* Assets.xcassets */,
 				A73810841BBA17E2002E2CE1 /* LaunchScreen.storyboard */,
@@ -269,6 +275,8 @@
 			files = (
 				A738107E1BBA17E2002E2CE1 /* ViewController.swift in Sources */,
 				A738107C1BBA17E2002E2CE1 /* AppDelegate.swift in Sources */,
+				AF43483D1BF134DD00CED8C2 /* exerciseViewController.swift in Sources */,
+				AF43483B1BF1337600CED8C2 /* countdownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,20 +1,20 @@
 //
-//  ViewController.swift
+//  countdownViewController.swift
 //  HelloWorld
 //
-//  Created by Ron Oppenheimer on 9/28/15.
+//  Created by Students on 11/9/15.
 //  Copyright © 2015 RonOppenheimer. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
-    
-    var timerCount = 60
+class countdownViewController: UIViewController {
+
+    var timerCount = 5
     var timerRunning = false
     var timer = NSTimer()
-
+    
     var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     @IBOutlet var nameLabel: UILabel!
     
@@ -34,13 +34,15 @@ class ViewController: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     func Counting() {
         if timerCount > 0 {
-        timerCount -= 1
-        timerLabel.text = "\(timerCount)"
-        audioPlayer!.play()
+            timerCount -= 1
+            timerLabel.text = "\(timerCount)"
+            audioPlayer!.play()
         }
-        
+        else {
+            performSegueWithIdentifier("goToExercise", sender: nil)
+        }
     }
-
+    
     @IBOutlet weak var progressBar: UIProgressView!
     
     func timerStop() {
@@ -70,7 +72,7 @@ class ViewController: UIViewController {
             audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
         } catch let error1 as NSError {
             error = error1
-                audioPlayer = nil
+            audioPlayer = nil
         }
         audioPlayer!.prepareToPlay()
         
@@ -91,18 +93,31 @@ class ViewController: UIViewController {
         }
         
     }
-
+    
     
     @IBAction func restartButton(sender: UIButton) {
         timerStop()
-        timerCount = 60
-        timerLabel.text = "60"
+        timerCount = 5
+        timerLabel.text = "5"
     }
-
+    
     @IBAction func helloWorldAction(nameTextField: UITextField) {
         nameLabel.text = "Hi \(nameTextField.text!)"
         nameTextField.hidden = true
     }
+    
+
+
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-
