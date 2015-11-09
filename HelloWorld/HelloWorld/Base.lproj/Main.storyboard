@@ -37,39 +37,7 @@
                                     <action selector="helloWorldAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="gye-bK-RA2"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg0-cd-Xei">
-                                <rect key="frame" x="20" y="406" width="280" height="79"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="ri8-h8-wu3"/>
-                                </constraints>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aki-6a-TuP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-tl-YPU">
-                                <rect key="frame" x="20" y="530" width="280" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="46b-qA-Tgd"/>
-                                </constraints>
-                                <state key="normal" title="Restart"/>
-                                <connections>
-                                    <action selector="restartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gvu-q3-sgV"/>
-                                </connections>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Txs-Gg-6hl">
-                                <rect key="frame" x="0.0" y="493" width="320" height="2"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="bIv-ze-1Ck">
-                                <rect key="frame" x="20" y="262" width="280" height="174"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="174" id="zds-Td-BSy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBR-0s-0kT">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBR-0s-0kT">
                                 <rect key="frame" x="110" y="224" width="100" height="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
@@ -79,28 +47,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bIv-ze-1Ck" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5CB-aO-IS5"/>
-                            <constraint firstItem="O8F-tl-YPU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7C3-YW-zdk"/>
-                            <constraint firstItem="O8F-tl-YPU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E3T-sf-NnM"/>
-                            <constraint firstItem="wg0-cd-Xei" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EX1-0a-wdW"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Exn-T5-EA8"/>
-                            <constraint firstItem="wg0-cd-Xei" firstAttribute="top" secondItem="G8D-1B-ram" secondAttribute="bottom" constant="198" id="MX5-GX-dFJ"/>
-                            <constraint firstItem="bIv-ze-1Ck" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R3K-fF-mGa"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VTd-6Y-pIW"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dtz-wa-Ius"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="top" secondItem="I5s-Ey-YfS" secondAttribute="bottom" constant="8" id="e8g-Hv-NUm"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mKg-Bj-nxw"/>
-                            <constraint firstItem="wg0-cd-Xei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q2Z-sM-IN6"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tuk-sm-67g"/>
-                            <constraint firstItem="bIv-ze-1Ck" firstAttribute="top" secondItem="G8D-1B-ram" secondAttribute="bottom" constant="54" id="xTM-1q-wBf"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="NameLabel" destination="I5s-Ey-YfS" id="bH2-0i-ieX"/>
+                        <outlet property="continueButton" destination="wBR-0s-0kT" id="ba8-dp-28Q"/>
                         <outlet property="nameLabel" destination="I5s-Ey-YfS" id="vJt-1N-9SO"/>
-                        <outlet property="progressBar" destination="Txs-Gg-6hl" id="bvv-RI-ITI"/>
-                        <outlet property="timerLabel" destination="bIv-ze-1Ck" id="KeE-N6-aC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
