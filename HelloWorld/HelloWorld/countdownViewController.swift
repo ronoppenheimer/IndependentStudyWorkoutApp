@@ -12,13 +12,14 @@ import AVFoundation
 class countdownViewController: UIViewController {
 
     var timerCount = 5
-    var timerRunning = false
+    var timerRunning = true
     var timer = NSTimer()
     
     var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Timer()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -27,7 +28,12 @@ class countdownViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func Timer() {
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
+        playSound()
+    }
     
+
     @IBOutlet var nameLabel: UILabel!
     
     
@@ -42,6 +48,7 @@ class countdownViewController: UIViewController {
             performSegueWithIdentifier("goToExercise", sender: nil)
         }
     }
+
     
     @IBOutlet weak var progressBar: UIProgressView!
     
@@ -77,37 +84,6 @@ class countdownViewController: UIViewController {
         audioPlayer!.prepareToPlay()
         
     }
-    
-    @IBAction func startButton(sender: UIButton) {
-        if timerRunning == false
-        {
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
-            timerRunning = true
-            sender.setTitle("Stop", forState: UIControlState.Normal)
-            playSound()
-        }
-        else
-        {
-            timerStop()
-            sender.setTitle("Start", forState: UIControlState.Normal)
-        }
-        
-    }
-    
-    
-    @IBAction func restartButton(sender: UIButton) {
-        timerStop()
-        timerCount = 5
-        timerLabel.text = "5"
-    }
-    
-    @IBAction func helloWorldAction(nameTextField: UITextField) {
-        nameLabel.text = "Hi \(nameTextField.text!)"
-        nameTextField.hidden = true
-    }
-    
-
-
     
 
     /*

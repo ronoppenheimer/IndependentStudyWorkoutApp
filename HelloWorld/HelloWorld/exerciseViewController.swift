@@ -12,13 +12,14 @@ import AVFoundation
 class exerciseViewController: UIViewController {
 
     var timerCount = 60
-    var timerRunning = false
+    var timerRunning = true
     var timer = NSTimer()
     
     var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Timer()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -27,9 +28,15 @@ class exerciseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func Timer() {
+        if timerRunning == true {
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
+        playSound()
+        }
+    }
     
     @IBOutlet var nameLabel: UILabel!
-    
+
     
     @IBOutlet var timerLabel: UILabel!
     func Counting() {
@@ -46,7 +53,6 @@ class exerciseViewController: UIViewController {
     func timerStop() {
         timer.invalidate()
         timerRunning = false
-        
     }
     
     func playSound() {
@@ -79,10 +85,9 @@ class exerciseViewController: UIViewController {
     @IBAction func startButton(sender: UIButton) {
         if timerRunning == false
         {
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
             timerRunning = true
+            Timer()
             sender.setTitle("Stop", forState: UIControlState.Normal)
-            playSound()
         }
         else
         {
@@ -99,10 +104,6 @@ class exerciseViewController: UIViewController {
         timerLabel.text = "60"
     }
     
-    @IBAction func helloWorldAction(nameTextField: UITextField) {
-        nameLabel.text = "Hi \(nameTextField.text!)"
-        nameTextField.hidden = true
-    }
 
     
 

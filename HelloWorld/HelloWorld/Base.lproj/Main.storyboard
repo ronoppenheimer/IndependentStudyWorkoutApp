@@ -78,26 +78,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBe-7H-zxt">
-                                <rect key="frame" x="20" y="406" width="280" height="79"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="t3K-x8-xSC"/>
-                                </constraints>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startButton:" destination="Auo-P6-jje" eventType="touchUpInside" id="JcH-RS-hWD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiQ-Hx-IIC">
-                                <rect key="frame" x="20" y="530" width="280" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DBM-05-k02"/>
-                                </constraints>
-                                <state key="normal" title="Restart"/>
-                                <connections>
-                                    <action selector="restartButton:" destination="Auo-P6-jje" eventType="touchUpInside" id="bT7-GK-zV2"/>
-                                </connections>
-                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="C9A-vD-VZh">
                                 <rect key="frame" x="0.0" y="493" width="320" height="2"/>
                             </progressView>
@@ -122,14 +102,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DBe-7H-zxt" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="2zZ-qA-yJ9"/>
-                            <constraint firstItem="oiQ-Hx-IIC" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="8eG-Xk-58b"/>
                             <constraint firstItem="i0D-Nf-gdm" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="EJ5-oJ-vmp"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="top" secondItem="5L5-wR-Dau" secondAttribute="bottom" constant="8" id="JlL-qh-hU8"/>
-                            <constraint firstItem="DBe-7H-zxt" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="VI9-c6-vlm"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="XG3-ri-fV8"/>
                             <constraint firstItem="i0D-Nf-gdm" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="cg2-ke-J4d"/>
-                            <constraint firstItem="oiQ-Hx-IIC" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="eQ0-Y0-rRW"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="kLB-9Y-wqq"/>
                         </constraints>
                     </view>
@@ -172,7 +148,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="ix3-NA-ZLt"/>
                                 </constraints>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="1WA-I2-SIq"/>
                                 </connections>

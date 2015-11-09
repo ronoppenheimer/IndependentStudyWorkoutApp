@@ -7,16 +7,12 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
     
     var timerCount = 60
     var timerRunning = false
     var timer = NSTimer()
-
-
-    var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,37 +28,8 @@ class ViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     
     
-    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet var continueButton: UIButton!
 
-
-    
-    func playSound() {
-        
-        // Set the sound file name & extension
-        let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Tick", ofType: "mp3")!)
-        
-        do {
-            // Preperation
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-        } catch _ {
-        }
-        do {
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch _ {
-        }
-        
-        // Play the sound
-        let error: NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-        } catch let error1 as NSError {
-            error = error1
-                audioPlayer = nil
-        }
-        audioPlayer!.prepareToPlay()
-        
-    }
-    
 
 
 
