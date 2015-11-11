@@ -78,8 +78,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="C9A-vD-VZh">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9A-vD-VZh">
                                 <rect key="frame" x="0.0" y="493" width="320" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="pO4-Yj-QzW"/>
+                                </constraints>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="i0D-Nf-gdm">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
@@ -113,7 +116,7 @@
                     <connections>
                         <outlet property="NameLabel" destination="x2L-qk-EWI" id="UNH-y4-tZ4"/>
                         <outlet property="nameLabel" destination="x2L-qk-EWI" id="XUt-yk-hv4"/>
-                        <outlet property="progressBar" destination="C9A-vD-VZh" id="Dsm-wZ-qaS"/>
+                        <outlet property="progressBar" destination="C9A-vD-VZh" id="yrY-z4-LYt"/>
                         <outlet property="timerLabel" destination="i0D-Nf-gdm" id="9ea-da-Q9Z"/>
                         <segue destination="hU7-N6-sG5" kind="show" identifier="goToExercise" id="te1-2b-Txq"/>
                     </connections>
@@ -163,8 +166,11 @@
                                     <action selector="restartButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="RFG-A0-8TH"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sGk-JJ-g3v">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGk-JJ-g3v">
                                 <rect key="frame" x="0.0" y="493" width="320" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="PYy-I1-Lmg"/>
+                                </constraints>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-ip-dCb">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
@@ -193,7 +199,7 @@
                     <connections>
                         <outlet property="NameLabel" destination="Cy8-eM-Xka" id="kF7-1B-Av3"/>
                         <outlet property="nameLabel" destination="Cy8-eM-Xka" id="gcJ-2Q-eNq"/>
-                        <outlet property="progressBar" destination="sGk-JJ-g3v" id="8TS-Lv-cIG"/>
+                        <outlet property="progressBar" destination="sGk-JJ-g3v" id="MB0-bk-Uwm"/>
                         <outlet property="timerLabel" destination="9Z3-ip-dCb" id="FFC-Ex-5aa"/>
                     </connections>
                 </viewController>

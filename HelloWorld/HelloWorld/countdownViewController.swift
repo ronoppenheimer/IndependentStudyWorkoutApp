@@ -21,6 +21,7 @@ class countdownViewController: UIViewController {
         super.viewDidLoad()
         Timer()
         // Do any additional setup after loading the view, typically from a nib.
+        progressBar.setProgress(0, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,10 @@ class countdownViewController: UIViewController {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
             audioPlayer!.play()
+            let progressCount = 5 - timerCount
+            let fractionalProgress = Float(progressCount) / 5
+            let animated = progressCount != 0
+            progressBar.setProgress(fractionalProgress, animated: animated)
         }
         else {
             performSegueWithIdentifier("goToExercise", sender: nil)
@@ -50,7 +55,8 @@ class countdownViewController: UIViewController {
     }
 
     
-    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet var progressBar: UIProgressView!
+
     
     func timerStop() {
         timer.invalidate()

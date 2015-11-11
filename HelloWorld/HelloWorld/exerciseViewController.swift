@@ -44,11 +44,16 @@ class exerciseViewController: UIViewController {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
             audioPlayer!.play()
+            let progressCount = 60 - timerCount
+            let fractionalProgress = Float(progressCount) / 60
+            let animated = progressCount != 0
+            progressBar.setProgress(fractionalProgress, animated: animated)
         }
         
     }
-    
-    @IBOutlet weak var progressBar: UIProgressView!
+
+    @IBOutlet var progressBar: UIProgressView!
+
     
     func timerStop() {
         timer.invalidate()
