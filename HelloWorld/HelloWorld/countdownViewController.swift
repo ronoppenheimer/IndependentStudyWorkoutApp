@@ -91,6 +91,12 @@ class countdownViewController: UIViewController {
         
     }
     
+    @IBAction func exitButton(sender: UIButton) {
+        timerStop()
+        performSegueWithIdentifier("countdownGoToStart", sender: nil)
+    }
+
+    
 
     /*
     // MARK: - Navigation

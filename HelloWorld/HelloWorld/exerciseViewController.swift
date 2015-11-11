@@ -110,6 +110,11 @@ class exerciseViewController: UIViewController {
     }
     
 
+    @IBAction func exitButton(sender: UIButton) {
+        timerStop()
+        performSegueWithIdentifier("exerciseGoToStart", sender: nil)
+    }
+
     
 
     /*

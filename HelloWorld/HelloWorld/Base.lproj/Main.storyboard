@@ -41,7 +41,7 @@
                                 <rect key="frame" x="110" y="224" width="100" height="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <segue destination="Auo-P6-jje" kind="show" id="YY9-58-QwX"/>
+                                    <segue destination="Auo-P6-jje" kind="show" identifier="goToCountdown" id="YY9-58-QwX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,6 +102,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5s-N1-CgV">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="Ri3-ay-KpP"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="DJB-Dt-niM"/>
+                                    <action selector="exitButton:" destination="Auo-P6-jje" eventType="touchUpInside" id="TUK-yd-MmY"/>
+                                    <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="Wrn-rI-Yee"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="countdownGoToStart" id="rCx-fK-HYr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,6 +141,7 @@
         <!--Exercise View Controller-->
         <scene sceneID="sQ7-2X-v4h">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcd-Hb-WQR" sceneMemberID="firstResponder"/>
                 <viewController id="hU7-N6-sG5" customClass="exerciseViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tdv-Ql-5Xj"/>
@@ -137,7 +151,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pushups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-eM-Xka">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lower Abdominal Crunch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-eM-Xka">
                                 <rect key="frame" x="20" y="28" width="280" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="YAP-kR-ngR"/>
@@ -181,6 +195,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icx-Zm-oaz">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="fZh-fh-W9n"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="HY2-2z-ehI"/>
+                                    <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="Wgu-r4-DcJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="exerciseGoToStart" id="8wf-0F-l7y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -203,9 +229,11 @@
                         <outlet property="timerLabel" destination="9Z3-ip-dCb" id="FFC-Ex-5aa"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wcd-Hb-WQR" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1310" y="429"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rCx-fK-HYr"/>
+    </inferredMetricsTieBreakers>
 </document>
