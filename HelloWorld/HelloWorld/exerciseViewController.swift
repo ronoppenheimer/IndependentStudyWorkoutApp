@@ -112,6 +112,7 @@ class exerciseViewController: UIViewController {
 
     @IBAction func exitButton(sender: UIButton) {
         timerStop()
+        timerCount = 0
         performSegueWithIdentifier("exerciseGoToStart", sender: nil)
     }
 
