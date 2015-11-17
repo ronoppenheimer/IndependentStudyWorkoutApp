@@ -395,14 +395,183 @@
                         <outlet property="nameLabel" destination="m8h-3c-Vjy" id="wME-us-big"/>
                         <outlet property="progressBar" destination="5wg-Re-yQB" id="RZk-yO-qlY"/>
                         <outlet property="timerLabel" destination="qJj-3o-brU" id="4jw-yY-W5V"/>
+                        <segue destination="c0e-PS-Kd2" kind="show" identifier="goToRest" animates="NO" id="1Tu-3C-BaG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YD9-dw-NOC" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2154" y="429"/>
         </scene>
+        <!--Rest View Controller-->
+        <scene sceneID="C9p-ch-tHn">
+            <objects>
+                <viewController id="c0e-PS-Kd2" customClass="restViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JXw-03-9UL"/>
+                        <viewControllerLayoutGuide type="bottom" id="rS3-ct-4Xb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mf0-aO-zBm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-mN-C9A">
+                                <rect key="frame" x="0.0" y="493" width="320" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9w3-au-Eai"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="5uL-F1-w1u">
+                                <rect key="frame" x="20" y="262" width="280" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="4GF-Ks-bER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5p-uN-TdH">
+                                <rect key="frame" x="20" y="28" width="280" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="Wsd-ia-pZv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51Z-MA-MLi">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="fE9-Kg-7lQ"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="c0e-PS-Kd2" eventType="touchUpInside" id="Mf0-Tx-uD9"/>
+                                    <action selector="exitButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="eKL-uU-Aq2"/>
+                                    <action selector="startButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="0H3-Wv-o0Q"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="4oN-mC-Yzz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N5p-uN-TdH" firstAttribute="top" secondItem="JXw-03-9UL" secondAttribute="bottom" constant="8" id="GOP-sg-Z5J"/>
+                            <constraint firstItem="5uL-F1-w1u" firstAttribute="leading" secondItem="mf0-aO-zBm" secondAttribute="leadingMargin" id="LNb-B9-J55"/>
+                            <constraint firstItem="N5p-uN-TdH" firstAttribute="leading" secondItem="mf0-aO-zBm" secondAttribute="leadingMargin" id="kNp-1X-ZzO"/>
+                            <constraint firstItem="N5p-uN-TdH" firstAttribute="trailing" secondItem="mf0-aO-zBm" secondAttribute="trailingMargin" id="noQ-Aq-OGY"/>
+                            <constraint firstItem="5uL-F1-w1u" firstAttribute="trailing" secondItem="mf0-aO-zBm" secondAttribute="trailingMargin" id="uu9-pk-T4y"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="NameLabel" destination="N5p-uN-TdH" id="4iI-VI-D2J"/>
+                        <outlet property="nameLabel" destination="N5p-uN-TdH" id="VLX-5W-Ohq"/>
+                        <outlet property="progressBar" destination="1ud-mN-C9A" id="ae3-Lm-10D"/>
+                        <outlet property="timerLabel" destination="5uL-F1-w1u" id="9HK-Me-jUA"/>
+                        <segue destination="sca-9s-aa7" kind="show" identifier="goToExercise" animates="NO" id="s9z-7v-IYS">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXa-pd-mcC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2578" y="429"/>
+        </scene>
+        <!--Exercise View Controller-->
+        <scene sceneID="xwy-P8-1kk">
+            <objects>
+                <viewController id="sca-9s-aa7" customClass="exerciseViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4sp-qV-jfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="CYH-dt-krs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="08O-3z-O5T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Curved Legs Crunch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4p-aP-cXR">
+                                <rect key="frame" x="20" y="28" width="280" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="AzJ-54-mOV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-xF-X5S">
+                                <rect key="frame" x="20" y="406" width="280" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="nZ2-eg-UUa"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="startButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="AZQ-JL-XHW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZB-XY-oxA">
+                                <rect key="frame" x="20" y="530" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z1Z-iy-EX0"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="L6T-S3-oLe"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cmj-se-gvu">
+                                <rect key="frame" x="0.0" y="493" width="320" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CZb-g6-ZCv"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="ohP-C4-qbt">
+                                <rect key="frame" x="20" y="262" width="280" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="YCK-f5-JAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYF-Pc-h0s">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="TTf-ez-t8E"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="pMe-TY-H32"/>
+                                    <action selector="startButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="ueB-ZN-pXK"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kKe-PN-yeB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ohP-C4-qbt" firstAttribute="leading" secondItem="08O-3z-O5T" secondAttribute="leadingMargin" id="9Wr-Qx-ZPm"/>
+                            <constraint firstItem="CZB-XY-oxA" firstAttribute="leading" secondItem="08O-3z-O5T" secondAttribute="leadingMargin" id="CTj-JB-T1b"/>
+                            <constraint firstItem="H4p-aP-cXR" firstAttribute="top" secondItem="4sp-qV-jfq" secondAttribute="bottom" constant="8" id="Dmb-yN-WaK"/>
+                            <constraint firstItem="H4p-aP-cXR" firstAttribute="leading" secondItem="08O-3z-O5T" secondAttribute="leadingMargin" id="Eda-H4-aBa"/>
+                            <constraint firstItem="aoK-xF-X5S" firstAttribute="leading" secondItem="08O-3z-O5T" secondAttribute="leadingMargin" id="Znm-nJ-Qq1"/>
+                            <constraint firstItem="H4p-aP-cXR" firstAttribute="trailing" secondItem="08O-3z-O5T" secondAttribute="trailingMargin" id="q9g-47-Hbd"/>
+                            <constraint firstItem="aoK-xF-X5S" firstAttribute="trailing" secondItem="08O-3z-O5T" secondAttribute="trailingMargin" id="rlE-OU-ija"/>
+                            <constraint firstItem="ohP-C4-qbt" firstAttribute="trailing" secondItem="08O-3z-O5T" secondAttribute="trailingMargin" id="vIz-P2-pAH"/>
+                            <constraint firstItem="CZB-XY-oxA" firstAttribute="trailing" secondItem="08O-3z-O5T" secondAttribute="trailingMargin" id="vzJ-hS-sAd"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="NameLabel" destination="H4p-aP-cXR" id="Txd-Cb-Utq"/>
+                        <outlet property="nameLabel" destination="H4p-aP-cXR" id="GK6-MS-nde"/>
+                        <outlet property="progressBar" destination="Cmj-se-gvu" id="Ogc-3H-syF"/>
+                        <outlet property="timerLabel" destination="ohP-C4-qbt" id="l2c-mH-a5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROe-mV-YIy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3008" y="429"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mwl-au-JIo"/>
+        <segue reference="kKe-PN-yeB"/>
     </inferredMetricsTieBreakers>
 </document>
