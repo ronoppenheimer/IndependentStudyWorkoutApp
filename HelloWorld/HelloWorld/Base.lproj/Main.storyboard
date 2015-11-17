@@ -37,7 +37,7 @@
                                     <action selector="helloWorldAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="gye-bK-RA2"/>
                                 </connections>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBR-0s-0kT">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBR-0s-0kT">
                                 <rect key="frame" x="110" y="224" width="100" height="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
@@ -48,11 +48,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Exn-T5-EA8"/>
+                            <constraint firstItem="wBR-0s-0kT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="GcZ-Vq-iGu"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VTd-6Y-pIW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wBR-0s-0kT" secondAttribute="trailing" constant="90" id="c1H-36-xkK"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dtz-wa-Ius"/>
                             <constraint firstItem="G8D-1B-ram" firstAttribute="top" secondItem="I5s-Ey-YfS" secondAttribute="bottom" constant="8" id="e8g-Hv-NUm"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mKg-Bj-nxw"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tuk-sm-67g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBR-0s-0kT" secondAttribute="bottom" constant="314" id="x7H-gB-71y"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -119,10 +122,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="i0D-Nf-gdm" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="EJ5-oJ-vmp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C9A-vD-VZh" secondAttribute="trailing" constant="-20" id="Jiz-Ox-yIP"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="top" secondItem="5L5-wR-Dau" secondAttribute="bottom" constant="8" id="JlL-qh-hU8"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="XG3-ri-fV8"/>
                             <constraint firstItem="i0D-Nf-gdm" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="cg2-ke-J4d"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="kLB-9Y-wqq"/>
+                            <constraint firstItem="C9A-vD-VZh" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" constant="-20" id="nfn-Sk-O98"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -159,16 +164,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe9-nD-xIg">
-                                <rect key="frame" x="20" y="406" width="280" height="79"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="ix3-NA-ZLt"/>
-                                </constraints>
-                                <state key="normal" title="Stop"/>
-                                <connections>
-                                    <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="1WA-I2-SIq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOH-Lj-roe">
                                 <rect key="frame" x="20" y="530" width="280" height="30"/>
                                 <constraints>
@@ -204,6 +199,16 @@
                                     <action selector="exitButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="HY2-2z-ehI"/>
                                     <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="Wgu-r4-DcJ"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="exerciseGoToStart" id="8wf-0F-l7y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe9-nD-xIg">
+                                <rect key="frame" x="20" y="406" width="280" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="ix3-NA-ZLt"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="1WA-I2-SIq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -572,6 +577,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kKe-PN-yeB"/>
+        <segue reference="rCx-fK-HYr"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var timerCount = 60
     var timerRunning = false
     var timer = NSTimer()
+    var exerciseCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
