@@ -53,11 +53,13 @@ class exerciseViewController: UIViewController {
             do {
                 try performSegueWithIdentifier("goToRest", sender: nil)
             }
-            catch {performSegueWithIdentifier("exerciseGoToStart", sender: nil)
+            catch {
+                performSegueWithIdentifier("exerciseGoToStart", sender: nil)
             }
             }
         
         }
+    
     
 
     @IBOutlet var progressBar: UIProgressView!
