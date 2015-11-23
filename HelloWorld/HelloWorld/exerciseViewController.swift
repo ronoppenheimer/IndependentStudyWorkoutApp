@@ -23,9 +23,18 @@ class exerciseViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "goToHome") {
+            
+        }
     }
     
     func Timer() {
@@ -123,7 +132,7 @@ class exerciseViewController: UIViewController {
     @IBAction func exitButton(sender: UIButton) {
         timerStop()
         timerCount = 0
-        performSegueWithIdentifier("exerciseGoToStart", sender: nil)
+        performSegueWithIdentifier("goToHome", sender: nil)
     }
 
     

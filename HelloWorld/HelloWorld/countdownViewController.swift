@@ -14,6 +14,7 @@ class countdownViewController: UIViewController {
     var timerCount = 5
     var timerRunning = true
     var timer = NSTimer()
+
     
     var audioPlayer: AVAudioPlayer?
     
@@ -22,11 +23,20 @@ class countdownViewController: UIViewController {
         Timer()
         // Do any additional setup after loading the view, typically from a nib.
         progressBar.setProgress(0, animated: true)
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "goToHome") {
+            
+        }
     }
     
     func Timer() {
@@ -93,7 +103,7 @@ class countdownViewController: UIViewController {
     
     @IBAction func exitButton(sender: UIButton) {
         timerStop()
-        performSegueWithIdentifier("countdownGoToStart", sender: nil)
+        performSegueWithIdentifier("goToHome", sender: nil)
     }
 
     

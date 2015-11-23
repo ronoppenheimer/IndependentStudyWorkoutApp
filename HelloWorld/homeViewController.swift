@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  homeViewController.swift
 //  HelloWorld
 //
-//  Created by Ron Oppenheimer on 9/28/15.
+//  Created by Students on 11/23/15.
 //  Copyright © 2015 RonOppenheimer. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class homeViewController: UIViewController {
+
     var timerCount = 60
     var timerRunning = false
     var timer = NSTimer()
@@ -22,30 +22,36 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.nameLabel.text = "Hi \(SharingManager.sharedInstance.storedNameLabel!)"
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         if (segue.identifier == "goToHome") {
             
+            
         }
     }
-
+    
     
     @IBOutlet var nameLabel: UILabel!
     
+    
+    @IBOutlet var continueButton: UIButton!
+    
+    
 
+    /*
+    // MARK: - Navigation
 
-
-
-    @IBAction func helloWorldAction(nameTextField: UITextField) {
-        SharingManager.sharedInstance.storedNameLabel = nameTextField.text!
-        performSegueWithIdentifier("goToHome", sender: nil)
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
 
 }
-

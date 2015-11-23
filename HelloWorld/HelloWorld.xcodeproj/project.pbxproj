@@ -18,6 +18,8 @@
 		AF43483B1BF1337600CED8C2 /* countdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43483A1BF1337600CED8C2 /* countdownViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AF43483D1BF134DD00CED8C2 /* exerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43483C1BF134DD00CED8C2 /* exerciseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AF6656AE1BF648210057C5A7 /* restViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6656AD1BF648210057C5A7 /* restViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AF689F111C0389520035714F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF689F101C0389520035714F /* homeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AF689F131C039BA20035714F /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF689F121C039BA20035714F /* SharingManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		AF43483A1BF1337600CED8C2 /* countdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countdownViewController.swift; sourceTree = "<group>"; };
 		AF43483C1BF134DD00CED8C2 /* exerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exerciseViewController.swift; sourceTree = "<group>"; };
 		AF6656AD1BF648210057C5A7 /* restViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restViewController.swift; sourceTree = "<group>"; };
+		AF689F101C0389520035714F /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homeViewController.swift; path = ../homeViewController.swift; sourceTree = "<group>"; };
+		AF689F121C039BA20035714F /* SharingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharingManager.swift; path = ../SharingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		A738107A1BBA17E2002E2CE1 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				AF689F121C039BA20035714F /* SharingManager.swift */,
+				AF689F101C0389520035714F /* homeViewController.swift */,
 				A738107B1BBA17E2002E2CE1 /* AppDelegate.swift */,
 				A738107D1BBA17E2002E2CE1 /* ViewController.swift */,
 				AF43483A1BF1337600CED8C2 /* countdownViewController.swift */,
@@ -277,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A738107E1BBA17E2002E2CE1 /* ViewController.swift in Sources */,
+				AF689F111C0389520035714F /* homeViewController.swift in Sources */,
+				AF689F131C039BA20035714F /* SharingManager.swift in Sources */,
 				A738107C1BBA17E2002E2CE1 /* AppDelegate.swift in Sources */,
 				AF43483D1BF134DD00CED8C2 /* exerciseViewController.swift in Sources */,
 				AF43483B1BF1337600CED8C2 /* countdownViewController.swift in Sources */,

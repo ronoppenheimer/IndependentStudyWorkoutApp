@@ -24,9 +24,17 @@ class restViewController: UIViewController {
         progressBar.setProgress(0, animated: true)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "goToHome") {
+        }
     }
     
     func Timer() {
@@ -93,7 +101,7 @@ class restViewController: UIViewController {
     
     @IBAction func exitButton(sender: UIButton) {
         timerStop()
-        performSegueWithIdentifier("restGoToStart", sender: nil)
+        performSegueWithIdentifier("goToHome", sender: nil)
     }
     
     
