@@ -8,5 +8,6 @@
 
 class SharingManager {
     var storedNameLabel: String!
+    var exerciseCount = 0
     static let sharedInstance = SharingManager()
 }

@@ -14,6 +14,7 @@ class exerciseViewController: UIViewController {
     var timerCount = 50
     var timerRunning = true
     var timer = NSTimer()
+    var exerciseNumber = 0
     
     var audioPlayer: AVAudioPlayer?
     
@@ -32,8 +33,7 @@ class exerciseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "goToHome") {
-            
+        if (segue.identifier == "goToRest") {
         }
     }
     
@@ -49,6 +49,9 @@ class exerciseViewController: UIViewController {
     
     @IBOutlet var timerLabel: UILabel!
     func Counting() {
+        exerciseNumber = SharingManager.sharedInstance.exerciseCount
+        exerciseNumber = 1 + exerciseNumber
+        SharingManager.sharedInstance.exerciseCount = exerciseNumber
         if timerCount > 0 {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
@@ -58,12 +61,15 @@ class exerciseViewController: UIViewController {
             let animated = progressCount != 0
             progressBar.setProgress(fractionalProgress, animated: animated)
         }
+        else if exerciseNumber == 2 {
+            performSegueWithIdentifier("goToHome", sender: nil)
+        }
         else {
             do {
                 try performSegueWithIdentifier("goToRest", sender: nil)
             }
             catch {
-                performSegueWithIdentifier("exerciseGoToStart", sender: nil)
+                performSegueWithIdentifier("goToHome", sender: nil)
             }
             }
         

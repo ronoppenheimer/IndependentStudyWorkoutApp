@@ -14,6 +14,7 @@ class restViewController: UIViewController {
     var timerCount = 10
     var timerRunning = true
     var timer = NSTimer()
+        var exerciseNumber: Int!
     
     var audioPlayer: AVAudioPlayer?
     
@@ -33,7 +34,8 @@ class restViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "goToHome") {
+        if (segue.identifier == "goToExercise") {
+            
         }
     }
     
