@@ -46,7 +46,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="I5s-Ey-YfS" id="bH2-0i-ieX"/>
                         <outlet property="continueButton" destination="wBR-0s-0kT" id="ba8-dp-28Q"/>
                         <outlet property="nameLabel" destination="I5s-Ey-YfS" id="vJt-1N-9SO"/>
                     </connections>
@@ -118,7 +117,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="x2L-qk-EWI" id="UNH-y4-tZ4"/>
                         <outlet property="nameLabel" destination="x2L-qk-EWI" id="XUt-yk-hv4"/>
                         <outlet property="progressBar" destination="C9A-vD-VZh" id="yrY-z4-LYt"/>
                         <outlet property="timerLabel" destination="i0D-Nf-gdm" id="9ea-da-Q9Z"/>
@@ -289,7 +287,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="4yN-xf-Rr7" id="VG8-2h-2VW"/>
                         <outlet property="nameLabel" destination="4yN-xf-Rr7" id="tai-0e-3jH"/>
                         <outlet property="progressBar" destination="VM3-PM-S2x" id="aaS-gE-Yo1"/>
                         <outlet property="timerLabel" destination="MOW-W2-1ZS" id="s4c-4o-tBj"/>
@@ -388,7 +385,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="m8h-3c-Vjy" id="EFy-n4-dbB"/>
                         <outlet property="nameLabel" destination="m8h-3c-Vjy" id="wME-us-big"/>
                         <outlet property="progressBar" destination="5wg-Re-yQB" id="RZk-yO-qlY"/>
                         <outlet property="restartEnabled" destination="PPX-Hd-q1Y" id="48d-VL-tvV"/>
@@ -463,7 +459,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="N5p-uN-TdH" id="4iI-VI-D2J"/>
                         <outlet property="nameLabel" destination="N5p-uN-TdH" id="VLX-5W-Ohq"/>
                         <outlet property="progressBar" destination="1ud-mN-C9A" id="ae3-Lm-10D"/>
                         <outlet property="timerLabel" destination="5uL-F1-w1u" id="9HK-Me-jUA"/>
@@ -562,11 +557,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="H4p-aP-cXR" id="Txd-Cb-Utq"/>
                         <outlet property="nameLabel" destination="H4p-aP-cXR" id="GK6-MS-nde"/>
                         <outlet property="progressBar" destination="Cmj-se-gvu" id="Ogc-3H-syF"/>
-                        <outlet property="restart" destination="CZB-XY-oxA" id="eud-Xu-q8J"/>
-                        <outlet property="restartBtn" destination="CZB-XY-oxA" id="lrC-DD-JUX"/>
                         <outlet property="restartEnabled" destination="CZB-XY-oxA" id="1rg-Cy-hMa"/>
                         <outlet property="startButtonTitle" destination="aoK-xF-X5S" id="Bs5-o0-reh"/>
                         <outlet property="timerLabel" destination="ohP-C4-qbt" id="l2c-mH-a5Z"/>
@@ -622,7 +614,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="eLI-fc-yNb" id="IGY-jt-t06"/>
                         <outlet property="nameLabel" destination="eLI-fc-yNb" id="QVX-fA-Z3Z"/>
                     </connections>
                 </viewController>
