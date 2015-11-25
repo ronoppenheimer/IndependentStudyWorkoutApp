@@ -11,7 +11,7 @@ import AVFoundation
 
 class exerciseViewController: UIViewController {
 
-    var timerCount = 50
+    var timerCount = 10
     var timerRunning = true
     var timer = NSTimer()
     var exerciseNumber: Int!
@@ -56,8 +56,8 @@ class exerciseViewController: UIViewController {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
             audioPlayer!.play()
-            let progressCount = 50 - timerCount
-            let fractionalProgress = Float(progressCount) / 50
+            let progressCount = 10 - timerCount
+            let fractionalProgress = Float(progressCount) / 10
             let animated = progressCount != 0
             progressBar.setProgress(fractionalProgress, animated: animated)
         }
@@ -136,8 +136,8 @@ class exerciseViewController: UIViewController {
     
     @IBAction func restartButton(sender: UIButton) {
         timerStop()
-        timerCount = 50
-        timerLabel.text = "50"
+        timerCount = 10
+        timerLabel.text = "10"
     }
     
 

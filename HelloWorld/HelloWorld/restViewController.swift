@@ -11,7 +11,7 @@ import AVFoundation
 
 class restViewController: UIViewController {
 
-    var timerCount = 10
+    var timerCount = 7
     var timerRunning = true
     var timer = NSTimer()
         var exerciseNumber: Int!
@@ -54,8 +54,8 @@ class restViewController: UIViewController {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
             audioPlayer!.play()
-            let progressCount = 10 - timerCount
-            let fractionalProgress = Float(progressCount) / 10
+            let progressCount = 7 - timerCount
+            let fractionalProgress = Float(progressCount) / 7
             let animated = progressCount != 0
             progressBar.setProgress(fractionalProgress, animated: animated)
         }

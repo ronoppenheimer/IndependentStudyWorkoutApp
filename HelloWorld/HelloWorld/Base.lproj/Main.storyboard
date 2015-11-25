@@ -158,7 +158,7 @@
                                     <action selector="restartButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="RFG-A0-8TH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-ip-dCb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-ip-dCb">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="PAf-fn-ui4"/>
@@ -242,7 +242,7 @@
                                     <constraint firstAttribute="height" constant="20" id="91A-YP-uLs"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-W2-1ZS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-W2-1ZS">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="pCR-AV-ewl"/>
@@ -346,7 +346,7 @@
                                     <constraint firstAttribute="height" constant="20" id="D5F-w8-bFG"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="qJj-3o-brU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="qJj-3o-brU">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="S4O-v3-Fn7"/>
@@ -414,15 +414,6 @@
                                     <constraint firstAttribute="height" constant="20" id="9w3-au-Eai"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="5uL-F1-w1u">
-                                <rect key="frame" x="20" y="262" width="280" height="174"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="174" id="4GF-Ks-bER"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5p-uN-TdH">
                                 <rect key="frame" x="20" y="28" width="280" height="142"/>
                                 <constraints>
@@ -445,6 +436,15 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="4oN-mC-Yzz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="5uL-F1-w1u">
+                                <rect key="frame" x="20" y="262" width="280" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="4GF-Ks-bER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="108"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -462,9 +462,7 @@
                         <outlet property="nameLabel" destination="N5p-uN-TdH" id="VLX-5W-Ohq"/>
                         <outlet property="progressBar" destination="1ud-mN-C9A" id="ae3-Lm-10D"/>
                         <outlet property="timerLabel" destination="5uL-F1-w1u" id="9HK-Me-jUA"/>
-                        <segue destination="sca-9s-aa7" kind="show" identifier="goToExercise" animates="NO" id="s9z-7v-IYS">
-                            <nil key="action"/>
-                        </segue>
+                        <segue destination="sca-9s-aa7" kind="show" identifier="goToExercise" animates="NO" id="qK1-t9-7Vf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXa-pd-mcC" sceneMemberID="firstResponder"/>
@@ -509,7 +507,7 @@
                                     <constraint firstAttribute="height" constant="20" id="CZb-g6-ZCv"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="ohP-C4-qbt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="ohP-C4-qbt">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="YCK-f5-JAj"/>
@@ -623,6 +621,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fUT-eF-yZb"/>
+        <segue reference="8wf-0F-l7y"/>
     </inferredMetricsTieBreakers>
 </document>
