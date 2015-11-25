@@ -49,6 +49,7 @@ class countdownViewController: UIViewController {
     
     
     @IBOutlet var timerLabel: UILabel!
+    
     func Counting() {
         if timerCount > 0 {
             timerCount -= 1

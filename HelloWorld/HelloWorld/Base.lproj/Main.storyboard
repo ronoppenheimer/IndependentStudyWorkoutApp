@@ -215,10 +215,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="NameLabel" destination="Cy8-eM-Xka" id="kF7-1B-Av3"/>
                         <outlet property="nameLabel" destination="Cy8-eM-Xka" id="gcJ-2Q-eNq"/>
                         <outlet property="progressBar" destination="sGk-JJ-g3v" id="MB0-bk-Uwm"/>
-                        <outlet property="restartBtn" destination="yOH-Lj-roe" id="OA0-v3-NVV"/>
+                        <outlet property="restartEnabled" destination="yOH-Lj-roe" id="0Wr-tN-Cem"/>
                         <outlet property="timerLabel" destination="9Z3-ip-dCb" id="FFC-Ex-5aa"/>
                         <segue destination="elu-Qd-bMG" kind="show" identifier="goToRest" animates="NO" id="TtZ-ju-3Je"/>
                     </connections>
@@ -633,6 +632,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kKe-PN-yeB"/>
+        <segue reference="fUT-eF-yZb"/>
     </inferredMetricsTieBreakers>
 </document>
