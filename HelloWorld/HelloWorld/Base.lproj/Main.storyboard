@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JlO-HL-RTW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JlO-HL-RTW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -150,7 +150,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOH-Lj-roe">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOH-Lj-roe">
                                 <rect key="frame" x="20" y="530" width="280" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="pIf-dM-5a3"/>
@@ -218,6 +218,7 @@
                         <outlet property="NameLabel" destination="Cy8-eM-Xka" id="kF7-1B-Av3"/>
                         <outlet property="nameLabel" destination="Cy8-eM-Xka" id="gcJ-2Q-eNq"/>
                         <outlet property="progressBar" destination="sGk-JJ-g3v" id="MB0-bk-Uwm"/>
+                        <outlet property="restartBtn" destination="yOH-Lj-roe" id="OA0-v3-NVV"/>
                         <outlet property="timerLabel" destination="9Z3-ip-dCb" id="FFC-Ex-5aa"/>
                         <segue destination="elu-Qd-bMG" kind="show" identifier="goToRest" animates="NO" id="TtZ-ju-3Je"/>
                     </connections>
@@ -333,7 +334,7 @@
                                     <action selector="startButton:" destination="Zza-Vu-0ae" eventType="touchUpInside" id="B8u-e9-gu6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPX-Hd-q1Y">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPX-Hd-q1Y">
                                 <rect key="frame" x="20" y="530" width="280" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5Q8-fX-U2t"/>
@@ -391,6 +392,7 @@
                         <outlet property="NameLabel" destination="m8h-3c-Vjy" id="EFy-n4-dbB"/>
                         <outlet property="nameLabel" destination="m8h-3c-Vjy" id="wME-us-big"/>
                         <outlet property="progressBar" destination="5wg-Re-yQB" id="RZk-yO-qlY"/>
+                        <outlet property="restartEnabled" destination="PPX-Hd-q1Y" id="48d-VL-tvV"/>
                         <outlet property="timerLabel" destination="qJj-3o-brU" id="4jw-yY-W5V"/>
                         <segue destination="c0e-PS-Kd2" kind="show" identifier="goToRest" animates="NO" id="1Tu-3C-BaG"/>
                     </connections>
@@ -497,7 +499,7 @@
                                     <action selector="startButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="AZQ-JL-XHW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZB-XY-oxA">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZB-XY-oxA">
                                 <rect key="frame" x="20" y="530" width="280" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Z1Z-iy-EX0"/>
@@ -564,6 +566,10 @@
                         <outlet property="NameLabel" destination="H4p-aP-cXR" id="Txd-Cb-Utq"/>
                         <outlet property="nameLabel" destination="H4p-aP-cXR" id="GK6-MS-nde"/>
                         <outlet property="progressBar" destination="Cmj-se-gvu" id="Ogc-3H-syF"/>
+                        <outlet property="restart" destination="CZB-XY-oxA" id="eud-Xu-q8J"/>
+                        <outlet property="restartBtn" destination="CZB-XY-oxA" id="lrC-DD-JUX"/>
+                        <outlet property="restartEnabled" destination="CZB-XY-oxA" id="1rg-Cy-hMa"/>
+                        <outlet property="startButtonTitle" destination="aoK-xF-X5S" id="Bs5-o0-reh"/>
                         <outlet property="timerLabel" destination="ohP-C4-qbt" id="l2c-mH-a5Z"/>
                     </connections>
                 </viewController>

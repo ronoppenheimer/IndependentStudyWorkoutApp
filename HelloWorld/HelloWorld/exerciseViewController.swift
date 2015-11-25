@@ -14,13 +14,14 @@ class exerciseViewController: UIViewController {
     var timerCount = 50
     var timerRunning = true
     var timer = NSTimer()
-    var exerciseNumber = 0
+    var exerciseNumber: Int!
     
     var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Timer()
+        restartEnabled.enabled = false
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -49,8 +50,7 @@ class exerciseViewController: UIViewController {
     
     @IBOutlet var timerLabel: UILabel!
     func Counting() {
-        exerciseNumber = SharingManager.sharedInstance.exerciseCount
-        exerciseNumber = 1 + exerciseNumber
+        exerciseNumber = 1 + SharingManager.sharedInstance.exerciseCount
         SharingManager.sharedInstance.exerciseCount = exerciseNumber
         if timerCount > 0 {
             timerCount -= 1
@@ -61,19 +61,21 @@ class exerciseViewController: UIViewController {
             let animated = progressCount != 0
             progressBar.setProgress(fractionalProgress, animated: animated)
         }
-        else if exerciseNumber == 2 {
-            performSegueWithIdentifier("goToHome", sender: nil)
-        }
         else {
-            do {
-                try performSegueWithIdentifier("goToRest", sender: nil)
-            }
-            catch {
+            if exerciseNumber == 3 {
                 performSegueWithIdentifier("goToHome", sender: nil)
             }
+            else {
+                performSegueWithIdentifier("goToRest", sender: nil)
+//                do {
+//                    try performSegueWithIdentifier("goToRest", sender: nil)
+//                }
+//                catch {
+//                    performSegueWithIdentifier("goToHome", sender: nil)
+//                }
             }
-        
         }
+    }
     
     
 
@@ -112,21 +114,25 @@ class exerciseViewController: UIViewController {
         
     }
     
+    
     @IBAction func startButton(sender: UIButton) {
         if timerRunning == false
         {
             timerRunning = true
             Timer()
             sender.setTitle("Stop", forState: UIControlState.Normal)
+            restartEnabled.enabled = false
         }
         else
         {
             timerStop()
             sender.setTitle("Start", forState: UIControlState.Normal)
+            restartEnabled.enabled = true
         }
         
     }
     
+    @IBOutlet var restartEnabled: UIButton!
     
     @IBAction func restartButton(sender: UIButton) {
         timerStop()
