@@ -14,7 +14,6 @@ class exerciseViewController: UIViewController {
     var timerCount = 10
     var timerRunning = true
     var timer = NSTimer()
-    var exerciseNumber: Int!
     
     var audioPlayer: AVAudioPlayer?
     
@@ -50,8 +49,6 @@ class exerciseViewController: UIViewController {
     
     @IBOutlet var timerLabel: UILabel!
     func Counting() {
-        exerciseNumber = 1 + SharingManager.sharedInstance.exerciseCount
-        SharingManager.sharedInstance.exerciseCount = exerciseNumber
         if timerCount > 0 {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
@@ -62,10 +59,6 @@ class exerciseViewController: UIViewController {
             progressBar.setProgress(fractionalProgress, animated: animated)
         }
         else {
-            if exerciseNumber == 3 {
-                performSegueWithIdentifier("goToHome", sender: nil)
-            }
-            else {
                 performSegueWithIdentifier("goToRest", sender: nil)
 //                do {
 //                    try performSegueWithIdentifier("goToRest", sender: nil)
@@ -73,7 +66,6 @@ class exerciseViewController: UIViewController {
 //                catch {
 //                    performSegueWithIdentifier("goToHome", sender: nil)
 //                }
-            }
         }
     }
     

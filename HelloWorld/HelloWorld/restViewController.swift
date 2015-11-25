@@ -14,7 +14,6 @@ class restViewController: UIViewController {
     var timerCount = 7
     var timerRunning = true
     var timer = NSTimer()
-        var exerciseNumber: Int!
     
     var audioPlayer: AVAudioPlayer?
     

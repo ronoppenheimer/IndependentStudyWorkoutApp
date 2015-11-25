@@ -97,9 +97,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="DJB-Dt-niM"/>
-                                    <action selector="exitButton:" destination="Auo-P6-jje" eventType="touchUpInside" id="TUK-yd-MmY"/>
-                                    <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="Wrn-rI-Yee"/>
+                                    <action selector="exitButton:" destination="Auo-P6-jje" eventType="touchUpInside" id="X2e-N1-Rtc"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="rCx-fK-HYr"/>
                                 </connections>
                             </button>
@@ -148,16 +146,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOH-Lj-roe">
-                                <rect key="frame" x="20" y="530" width="280" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="pIf-dM-5a3"/>
-                                </constraints>
-                                <state key="normal" title="Restart"/>
-                                <connections>
-                                    <action selector="restartButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="RFG-A0-8TH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-ip-dCb">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
                                 <constraints>
@@ -174,8 +162,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="HY2-2z-ehI"/>
-                                    <action selector="startButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="Wgu-r4-DcJ"/>
+                                    <action selector="exitButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="kem-0Y-TkF"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="8wf-0F-l7y"/>
                                 </connections>
                             </button>
@@ -195,6 +182,16 @@
                                     <constraint firstAttribute="height" constant="20" id="PYy-I1-Lmg"/>
                                 </constraints>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOH-Lj-roe">
+                                <rect key="frame" x="20" y="530" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pIf-dM-5a3"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButton:" destination="hU7-N6-sG5" eventType="touchUpInside" id="RFG-A0-8TH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -267,9 +264,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="Zza-Vu-0ae" eventType="touchUpInside" id="7pX-9h-OfA"/>
-                                    <action selector="exitButton:" destination="elu-Qd-bMG" eventType="touchUpInside" id="mre-W4-now"/>
-                                    <action selector="startButton:" destination="Zza-Vu-0ae" eventType="touchUpInside" id="w4k-47-TBc"/>
+                                    <action selector="exitButton:" destination="elu-Qd-bMG" eventType="touchUpInside" id="FRj-0R-EcM"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="Mwl-au-JIo"/>
                                 </connections>
                             </button>
@@ -362,8 +357,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="Zza-Vu-0ae" eventType="touchUpInside" id="uHz-qw-W4r"/>
-                                    <action selector="startButton:" destination="Zza-Vu-0ae" eventType="touchUpInside" id="x7h-gC-AXj"/>
+                                    <action selector="exitButton:" destination="Zza-Vu-0ae" eventType="touchUpInside" id="qMp-6c-Uoy"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="fUT-eF-yZb"/>
                                 </connections>
                             </button>
@@ -430,9 +424,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="c0e-PS-Kd2" eventType="touchUpInside" id="Mf0-Tx-uD9"/>
-                                    <action selector="exitButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="eKL-uU-Aq2"/>
-                                    <action selector="startButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="0H3-Wv-o0Q"/>
+                                    <action selector="exitButton:" destination="c0e-PS-Kd2" eventType="touchUpInside" id="SnU-vF-hKc"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="4oN-mC-Yzz"/>
                                 </connections>
                             </button>
@@ -523,8 +515,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
-                                    <action selector="exitButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="pMe-TY-H32"/>
-                                    <action selector="startButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="ueB-ZN-pXK"/>
+                                    <action selector="exitButton:" destination="sca-9s-aa7" eventType="touchUpInside" id="VFf-EP-xmw"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="kKe-PN-yeB"/>
                                 </connections>
                             </button>
@@ -558,8 +549,8 @@
                         <outlet property="nameLabel" destination="H4p-aP-cXR" id="GK6-MS-nde"/>
                         <outlet property="progressBar" destination="Cmj-se-gvu" id="Ogc-3H-syF"/>
                         <outlet property="restartEnabled" destination="CZB-XY-oxA" id="1rg-Cy-hMa"/>
-                        <outlet property="startButtonTitle" destination="aoK-xF-X5S" id="Bs5-o0-reh"/>
                         <outlet property="timerLabel" destination="ohP-C4-qbt" id="l2c-mH-a5Z"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToRest" id="8dn-w1-B7y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROe-mV-YIy" sceneMemberID="firstResponder"/>
@@ -578,15 +569,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter your name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLI-fc-yNb">
-                                <rect key="frame" x="20" y="28" width="280" height="142"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="142" id="vla-oE-3cR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-RZ-ugr">
                                 <rect key="frame" x="20" y="178" width="280" height="30"/>
                                 <constraints>
@@ -599,6 +581,15 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="0tI-Jr-cvj"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter your name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLI-fc-yNb">
+                                <rect key="frame" x="20" y="28" width="280" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="vla-oE-3cR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -621,6 +612,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8wf-0F-l7y"/>
+        <segue reference="8dn-w1-B7y"/>
     </inferredMetricsTieBreakers>
 </document>
