@@ -8,7 +8,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="homeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="BYZ-38-t0r" customClass="homeViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBR-0s-0kT">
-                                <rect key="frame" x="110" y="224" width="100" height="30"/>
+                                <rect key="frame" x="110" y="518" width="100" height="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <segue destination="Auo-P6-jje" kind="show" identifier="goToCountdown" id="YY9-58-QwX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5s-Ey-YfS">
-                                <rect key="frame" x="20" y="28" width="280" height="142"/>
+                                <rect key="frame" x="20" y="20" width="280" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="142" id="0ut-gb-HW1"/>
+                                    <constraint firstAttribute="height" constant="60" id="0ut-gb-HW1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,9 +39,9 @@
                             <constraint firstItem="wBR-0s-0kT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="GcZ-Vq-iGu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wBR-0s-0kT" secondAttribute="trailing" constant="90" id="c1H-36-xkK"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dtz-wa-Ius"/>
-                            <constraint firstItem="I5s-Ey-YfS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mKg-Bj-nxw"/>
+                            <constraint firstItem="I5s-Ey-YfS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mKg-Bj-nxw"/>
                             <constraint firstItem="I5s-Ey-YfS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tuk-sm-67g"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBR-0s-0kT" secondAttribute="bottom" constant="314" id="x7H-gB-71y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBR-0s-0kT" secondAttribute="bottom" constant="20" id="x7H-gB-71y"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -53,6 +53,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+        <!--Workout View Controller-->
+        <scene sceneID="6lv-0z-YLt">
+            <objects>
+                <viewController storyboardIdentifier="workoutViewController" id="UC8-yh-LbX" customClass="workoutViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HaK-57-ngx"/>
+                        <viewControllerLayoutGuide type="bottom" id="QM4-cX-mh7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lJk-bw-7y3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Workout" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgK-P8-dF8">
+                                <rect key="frame" x="20" y="0.0" width="280" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Wlg-dc-QZB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="workoutLabel" destination="CgK-P8-dF8" id="SAn-pE-Wdt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCm-ds-lWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="1099"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="j3S-Dh-2ad">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0PH-iZ-MLf" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfK-gS-fmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="1099"/>
         </scene>
         <!--Countdown View Controller-->
         <scene sceneID="1wO-Xd-GQR">
