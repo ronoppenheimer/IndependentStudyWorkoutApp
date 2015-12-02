@@ -32,7 +32,7 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
         
         self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
         
-        self.pageViewController.view.frame = CGRectMake(0, 100, self.view.frame.width, self.view.frame.size.height - 140)
+        self.pageViewController.view.frame = CGRectMake(0, 100, self.view.frame.width, self.view.frame.size.height - 100)
         
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
@@ -128,7 +128,6 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
     @IBOutlet var nameLabel: UILabel!
     
     
-    @IBOutlet var continueButton: UIButton!
     
     
 

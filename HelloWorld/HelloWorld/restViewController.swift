@@ -52,7 +52,9 @@ class restViewController: UIViewController {
         if timerCount > 0 {
             timerCount -= 1
             timerLabel.text = "\(timerCount)"
-            audioPlayer!.play()
+            if timerCount <= 3 {
+                //audioPlayer!.play()
+            }
             let progressCount = 7 - timerCount
             let fractionalProgress = Float(progressCount) / 7
             let animated = progressCount != 0

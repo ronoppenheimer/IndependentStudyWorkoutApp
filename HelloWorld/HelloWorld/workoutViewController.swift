@@ -31,6 +31,12 @@ class workoutViewController: UIViewController {
     
     @IBOutlet var workoutLabel: UILabel!
 
+    @IBAction func startWorkoutButton(sender: UIButton) {
+        if self.titleText == "8 Minute Abs"{
+            performSegueWithIdentifier("goToAbs", sender: nil)
+        }
+        
+    }
 
     /*
     // MARK: - Navigation
