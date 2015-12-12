@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JlO-HL-RTW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -118,7 +120,7 @@
                                     <constraint firstAttribute="height" constant="20" id="pO4-Yj-QzW"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="i0D-Nf-gdm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="i0D-Nf-gdm">
                                 <rect key="frame" x="20" y="262" width="280" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="WzD-VG-QL3"/>
@@ -147,14 +149,28 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="rCx-fK-HYr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Up: Abdominal Crunch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRA-Je-ToU">
+                                <rect key="frame" x="-1" y="137" width="323" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="I46-Gb-76E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HRA-Je-ToU" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" constant="-21" id="6tC-lN-8Gf"/>
                             <constraint firstItem="i0D-Nf-gdm" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="EJ5-oJ-vmp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C9A-vD-VZh" secondAttribute="trailing" constant="-20" id="Jiz-Ox-yIP"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="top" secondItem="5L5-wR-Dau" secondAttribute="bottom" constant="8" id="JlL-qh-hU8"/>
+                            <constraint firstItem="HRA-Je-ToU" firstAttribute="centerX" secondItem="x2L-qk-EWI" secondAttribute="centerX" id="Qi5-yj-02e"/>
+                            <constraint firstItem="HRA-Je-ToU" firstAttribute="top" secondItem="j5s-N1-CgV" secondAttribute="bottom" constant="71" id="SIB-Cl-hnB"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="trailing" secondItem="xeF-vz-drz" secondAttribute="trailingMargin" id="XG3-ri-fV8"/>
                             <constraint firstItem="i0D-Nf-gdm" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="cg2-ke-J4d"/>
+                            <constraint firstItem="HRA-Je-ToU" firstAttribute="firstBaseline" secondItem="x2L-qk-EWI" secondAttribute="baseline" constant="2" id="evR-Fc-aar"/>
+                            <constraint firstItem="i0D-Nf-gdm" firstAttribute="top" secondItem="HRA-Je-ToU" secondAttribute="bottom" constant="47" id="i9W-UR-P0O"/>
                             <constraint firstItem="x2L-qk-EWI" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" id="kLB-9Y-wqq"/>
                             <constraint firstItem="C9A-vD-VZh" firstAttribute="leading" secondItem="xeF-vz-drz" secondAttribute="leadingMargin" constant="-20" id="nfn-Sk-O98"/>
                         </constraints>
@@ -162,6 +178,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="nameLabel" destination="x2L-qk-EWI" id="XUt-yk-hv4"/>
+                        <outlet property="nextUpLabel" destination="HRA-Je-ToU" id="4GK-Ym-fYH"/>
                         <outlet property="progressBar" destination="C9A-vD-VZh" id="yrY-z4-LYt"/>
                         <outlet property="timerLabel" destination="i0D-Nf-gdm" id="9ea-da-Q9Z"/>
                         <segue destination="hU7-N6-sG5" kind="show" identifier="goToExercise" animates="NO" id="te1-2b-Txq"/>
@@ -183,7 +200,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lower Abdominal Crunch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-eM-Xka">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Abdominal Crunch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-eM-Xka">
                                 <rect key="frame" x="20" y="28" width="280" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="YAP-kR-ngR"/>
@@ -343,6 +360,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="nameLabel" destination="4yN-xf-Rr7" id="tai-0e-3jH"/>
+                        <outlet property="nextUpLabel" destination="NYM-3p-hKD" id="9zX-Gq-5zU"/>
                         <outlet property="progressBar" destination="VM3-PM-S2x" id="aaS-gE-Yo1"/>
                         <outlet property="timerLabel" destination="MOW-W2-1ZS" id="s4c-4o-tBj"/>
                         <segue destination="Zza-Vu-0ae" kind="show" identifier="goToExercise" animates="NO" id="66g-zu-uKP">
@@ -526,6 +544,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="nameLabel" destination="N5p-uN-TdH" id="VLX-5W-Ohq"/>
+                        <outlet property="nextUpLabel" destination="QI6-Mb-LYp" id="xn3-XS-Oeq"/>
                         <outlet property="progressBar" destination="1ud-mN-C9A" id="ae3-Lm-10D"/>
                         <outlet property="timerLabel" destination="5uL-F1-w1u" id="9HK-Me-jUA"/>
                         <segue destination="sca-9s-aa7" kind="show" identifier="goToExercise" animates="NO" id="qK1-t9-7Vf"/>
