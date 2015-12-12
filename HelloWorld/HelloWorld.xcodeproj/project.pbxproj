@@ -14,6 +14,31 @@
 		A73810861BBA17E2002E2CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73810841BBA17E2002E2CE1 /* LaunchScreen.storyboard */; };
 		A73810911BBA17E2002E2CE1 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73810901BBA17E2002E2CE1 /* HelloWorldTests.swift */; };
 		A738109C1BBA17E2002E2CE1 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738109B1BBA17E2002E2CE1 /* HelloWorldUITests.swift */; };
+		A7AE7E2C1C1CD83C00205059 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E131C1CD83C00205059 /* 1.wav */; };
+		A7AE7E2D1C1CD83C00205059 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E141C1CD83C00205059 /* 2.wav */; };
+		A7AE7E2E1C1CD83C00205059 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E151C1CD83C00205059 /* 3.wav */; };
+		A7AE7E2F1C1CD83C00205059 /* Abdominal Crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E161C1CD83C00205059 /* Abdominal Crunch.wav */; };
+		A7AE7E301C1CD83C00205059 /* Begin With.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E171C1CD83C00205059 /* Begin With.wav */; };
+		A7AE7E311C1CD83C00205059 /* Burpees.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E181C1CD83C00205059 /* Burpees.wav */; };
+		A7AE7E321C1CD83C00205059 /* Curved Legs Crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E191C1CD83C00205059 /* Curved Legs Crunch.wav */; };
+		A7AE7E331C1CD83C00205059 /* Good Job.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E1A1C1CD83C00205059 /* Good Job.wav */; };
+		A7AE7E341C1CD83C00205059 /* Heel Raises.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E1B1C1CD83C00205059 /* Heel Raises.wav */; };
+		A7AE7E351C1CD83C00205059 /* Jack Knife.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E1C1C1CD83C00205059 /* Jack Knife.wav */; };
+		A7AE7E361C1CD83C00205059 /* Leg Raise.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E1D1C1CD83C00205059 /* Leg Raise.wav */; };
+		A7AE7E371C1CD83C00205059 /* Lunges.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E1E1C1CD83C00205059 /* Lunges.wav */; };
+		A7AE7E381C1CD83C00205059 /* Next Up.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E1F1C1CD83C00205059 /* Next Up.wav */; };
+		A7AE7E391C1CD83C00205059 /* Plank Hold.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E201C1CD83C00205059 /* Plank Hold.wav */; };
+		A7AE7E3A1C1CD83C00205059 /* Push-Ups.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E211C1CD83C00205059 /* Push-Ups.wav */; };
+		A7AE7E3B1C1CD83C00205059 /* Rest.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E221C1CD83C00205059 /* Rest.wav */; };
+		A7AE7E3C1C1CD83C00205059 /* Running In Place.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E231C1CD83C00205059 /* Running In Place.wav */; };
+		A7AE7E3D1C1CD83C00205059 /* Russian Twist.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E241C1CD83C00205059 /* Russian Twist.wav */; };
+		A7AE7E3E1C1CD83C00205059 /* Scissors.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E251C1CD83C00205059 /* Scissors.wav */; };
+		A7AE7E3F1C1CD83C00205059 /* Side Crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E261C1CD83C00205059 /* Side Crunch.wav */; };
+		A7AE7E401C1CD83C00205059 /* Squats.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E271C1CD83C00205059 /* Squats.wav */; };
+		A7AE7E411C1CD83C00205059 /* Success.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E281C1CD83C00205059 /* Success.wav */; };
+		A7AE7E421C1CD83C00205059 /* Tucked V-Ups.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E291C1CD83C00205059 /* Tucked V-Ups.wav */; };
+		A7AE7E431C1CD83C00205059 /* V-Ups.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E2A1C1CD83C00205059 /* V-Ups.wav */; };
+		A7AE7E441C1CD83C00205059 /* Windshield Wiper.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7AE7E2B1C1CD83C00205059 /* Windshield Wiper.wav */; };
 		A7F7FC5B1C07E2A6000D59DA /* workoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7FC5A1C07E2A6000D59DA /* workoutViewController.swift */; };
 		AF21DB401BD93E2E001760AD /* Tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF21DB3F1BD93E2E001760AD /* Tick.mp3 */; };
 		AF43483B1BF1337600CED8C2 /* countdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43483A1BF1337600CED8C2 /* countdownViewController.swift */; };
@@ -54,6 +79,31 @@
 		A73810971BBA17E2002E2CE1 /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A738109B1BBA17E2002E2CE1 /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		A738109D1BBA17E2002E2CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AE7E131C1CD83C00205059 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = "Workout App/1.wav"; sourceTree = "<group>"; };
+		A7AE7E141C1CD83C00205059 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = "Workout App/2.wav"; sourceTree = "<group>"; };
+		A7AE7E151C1CD83C00205059 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = "Workout App/3.wav"; sourceTree = "<group>"; };
+		A7AE7E161C1CD83C00205059 /* Abdominal Crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Abdominal Crunch.wav"; path = "Workout App/Abdominal Crunch.wav"; sourceTree = "<group>"; };
+		A7AE7E171C1CD83C00205059 /* Begin With.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Begin With.wav"; path = "Workout App/Begin With.wav"; sourceTree = "<group>"; };
+		A7AE7E181C1CD83C00205059 /* Burpees.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Burpees.wav; path = "Workout App/Burpees.wav"; sourceTree = "<group>"; };
+		A7AE7E191C1CD83C00205059 /* Curved Legs Crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Curved Legs Crunch.wav"; path = "Workout App/Curved Legs Crunch.wav"; sourceTree = "<group>"; };
+		A7AE7E1A1C1CD83C00205059 /* Good Job.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Good Job.wav"; path = "Workout App/Good Job.wav"; sourceTree = "<group>"; };
+		A7AE7E1B1C1CD83C00205059 /* Heel Raises.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Heel Raises.wav"; path = "Workout App/Heel Raises.wav"; sourceTree = "<group>"; };
+		A7AE7E1C1C1CD83C00205059 /* Jack Knife.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Jack Knife.wav"; path = "Workout App/Jack Knife.wav"; sourceTree = "<group>"; };
+		A7AE7E1D1C1CD83C00205059 /* Leg Raise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Leg Raise.wav"; path = "Workout App/Leg Raise.wav"; sourceTree = "<group>"; };
+		A7AE7E1E1C1CD83C00205059 /* Lunges.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Lunges.wav; path = "Workout App/Lunges.wav"; sourceTree = "<group>"; };
+		A7AE7E1F1C1CD83C00205059 /* Next Up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Next Up.wav"; path = "Workout App/Next Up.wav"; sourceTree = "<group>"; };
+		A7AE7E201C1CD83C00205059 /* Plank Hold.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Plank Hold.wav"; path = "Workout App/Plank Hold.wav"; sourceTree = "<group>"; };
+		A7AE7E211C1CD83C00205059 /* Push-Ups.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Push-Ups.wav"; path = "Workout App/Push-Ups.wav"; sourceTree = "<group>"; };
+		A7AE7E221C1CD83C00205059 /* Rest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Rest.wav; path = "Workout App/Rest.wav"; sourceTree = "<group>"; };
+		A7AE7E231C1CD83C00205059 /* Running In Place.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Running In Place.wav"; path = "Workout App/Running In Place.wav"; sourceTree = "<group>"; };
+		A7AE7E241C1CD83C00205059 /* Russian Twist.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Russian Twist.wav"; path = "Workout App/Russian Twist.wav"; sourceTree = "<group>"; };
+		A7AE7E251C1CD83C00205059 /* Scissors.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Scissors.wav; path = "Workout App/Scissors.wav"; sourceTree = "<group>"; };
+		A7AE7E261C1CD83C00205059 /* Side Crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Side Crunch.wav"; path = "Workout App/Side Crunch.wav"; sourceTree = "<group>"; };
+		A7AE7E271C1CD83C00205059 /* Squats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Squats.wav; path = "Workout App/Squats.wav"; sourceTree = "<group>"; };
+		A7AE7E281C1CD83C00205059 /* Success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Success.wav; path = "Workout App/Success.wav"; sourceTree = "<group>"; };
+		A7AE7E291C1CD83C00205059 /* Tucked V-Ups.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Tucked V-Ups.wav"; path = "Workout App/Tucked V-Ups.wav"; sourceTree = "<group>"; };
+		A7AE7E2A1C1CD83C00205059 /* V-Ups.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "V-Ups.wav"; path = "Workout App/V-Ups.wav"; sourceTree = "<group>"; };
+		A7AE7E2B1C1CD83C00205059 /* Windshield Wiper.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Windshield Wiper.wav"; path = "Workout App/Windshield Wiper.wav"; sourceTree = "<group>"; };
 		A7F7FC5A1C07E2A6000D59DA /* workoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = workoutViewController.swift; sourceTree = "<group>"; };
 		AF21DB3F1BD93E2E001760AD /* Tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tick.mp3; sourceTree = "<group>"; };
 		AF43483A1BF1337600CED8C2 /* countdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countdownViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +200,31 @@
 			isa = PBXGroup;
 			children = (
 				AF21DB3F1BD93E2E001760AD /* Tick.mp3 */,
+				A7AE7E131C1CD83C00205059 /* 1.wav */,
+				A7AE7E141C1CD83C00205059 /* 2.wav */,
+				A7AE7E151C1CD83C00205059 /* 3.wav */,
+				A7AE7E161C1CD83C00205059 /* Abdominal Crunch.wav */,
+				A7AE7E171C1CD83C00205059 /* Begin With.wav */,
+				A7AE7E181C1CD83C00205059 /* Burpees.wav */,
+				A7AE7E191C1CD83C00205059 /* Curved Legs Crunch.wav */,
+				A7AE7E1A1C1CD83C00205059 /* Good Job.wav */,
+				A7AE7E1B1C1CD83C00205059 /* Heel Raises.wav */,
+				A7AE7E1C1C1CD83C00205059 /* Jack Knife.wav */,
+				A7AE7E1D1C1CD83C00205059 /* Leg Raise.wav */,
+				A7AE7E1E1C1CD83C00205059 /* Lunges.wav */,
+				A7AE7E1F1C1CD83C00205059 /* Next Up.wav */,
+				A7AE7E201C1CD83C00205059 /* Plank Hold.wav */,
+				A7AE7E211C1CD83C00205059 /* Push-Ups.wav */,
+				A7AE7E221C1CD83C00205059 /* Rest.wav */,
+				A7AE7E231C1CD83C00205059 /* Running In Place.wav */,
+				A7AE7E241C1CD83C00205059 /* Russian Twist.wav */,
+				A7AE7E251C1CD83C00205059 /* Scissors.wav */,
+				A7AE7E261C1CD83C00205059 /* Side Crunch.wav */,
+				A7AE7E271C1CD83C00205059 /* Squats.wav */,
+				A7AE7E281C1CD83C00205059 /* Success.wav */,
+				A7AE7E291C1CD83C00205059 /* Tucked V-Ups.wav */,
+				A7AE7E2A1C1CD83C00205059 /* V-Ups.wav */,
+				A7AE7E2B1C1CD83C00205059 /* Windshield Wiper.wav */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,10 +332,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AE7E2F1C1CD83C00205059 /* Abdominal Crunch.wav in Resources */,
+				A7AE7E2C1C1CD83C00205059 /* 1.wav in Resources */,
+				A7AE7E341C1CD83C00205059 /* Heel Raises.wav in Resources */,
 				A73810861BBA17E2002E2CE1 /* LaunchScreen.storyboard in Resources */,
+				A7AE7E311C1CD83C00205059 /* Burpees.wav in Resources */,
+				A7AE7E3D1C1CD83C00205059 /* Russian Twist.wav in Resources */,
+				A7AE7E361C1CD83C00205059 /* Leg Raise.wav in Resources */,
+				A7AE7E3F1C1CD83C00205059 /* Side Crunch.wav in Resources */,
+				A7AE7E321C1CD83C00205059 /* Curved Legs Crunch.wav in Resources */,
+				A7AE7E331C1CD83C00205059 /* Good Job.wav in Resources */,
+				A7AE7E391C1CD83C00205059 /* Plank Hold.wav in Resources */,
 				AF21DB401BD93E2E001760AD /* Tick.mp3 in Resources */,
+				A7AE7E2E1C1CD83C00205059 /* 3.wav in Resources */,
+				A7AE7E2D1C1CD83C00205059 /* 2.wav in Resources */,
+				A7AE7E421C1CD83C00205059 /* Tucked V-Ups.wav in Resources */,
+				A7AE7E3A1C1CD83C00205059 /* Push-Ups.wav in Resources */,
 				A73810831BBA17E2002E2CE1 /* Assets.xcassets in Resources */,
+				A7AE7E3C1C1CD83C00205059 /* Running In Place.wav in Resources */,
+				A7AE7E3E1C1CD83C00205059 /* Scissors.wav in Resources */,
 				A73810811BBA17E2002E2CE1 /* Main.storyboard in Resources */,
+				A7AE7E3B1C1CD83C00205059 /* Rest.wav in Resources */,
+				A7AE7E431C1CD83C00205059 /* V-Ups.wav in Resources */,
+				A7AE7E301C1CD83C00205059 /* Begin With.wav in Resources */,
+				A7AE7E441C1CD83C00205059 /* Windshield Wiper.wav in Resources */,
+				A7AE7E411C1CD83C00205059 /* Success.wav in Resources */,
+				A7AE7E381C1CD83C00205059 /* Next Up.wav in Resources */,
+				A7AE7E371C1CD83C00205059 /* Lunges.wav in Resources */,
+				A7AE7E351C1CD83C00205059 /* Jack Knife.wav in Resources */,
+				A7AE7E401C1CD83C00205059 /* Squats.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

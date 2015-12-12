@@ -17,12 +17,17 @@ class countdownViewController: UIViewController {
 
     
     var audioPlayer: AVAudioPlayer?
+    var beginWith: AVAudioPlayer?
+    var three: AVAudioPlayer?
+    var two: AVAudioPlayer?
+    var one: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Timer()
         // Do any additional setup after loading the view, typically from a nib.
         progressBar.setProgress(0, animated: true)
+        beginWith!.play()
         
     }
     override func viewWillAppear(animated: Bool) {
@@ -53,9 +58,18 @@ class countdownViewController: UIViewController {
     func Counting() {
         if timerCount > 0 {
             timerCount -= 1
-            timerLabel.text = "\(timerCount)"
+            timerLabel.text = "\(timerCount + 1)"
             if timerCount <= 3 {
                 //audioPlayer!.play()
+            }
+            if timerCount == 2 {
+                three!.play()
+            }
+            if timerCount == 1 {
+                two!.play()
+            }
+            if timerCount == 0 {
+                one!.play()
             }
             let progressCount = 5 - timerCount
             let fractionalProgress = Float(progressCount) / 5
@@ -81,10 +95,13 @@ class countdownViewController: UIViewController {
         
         // Set the sound file name & extension
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Tick", ofType: "mp3")!)
-        
+        let beginWithSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Begin With", ofType: "wav")!)
+        let threeSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("3", ofType: "wav")!)
+        let twoSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("2", ofType: "wav")!)
+        let oneSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("1", ofType: "wav")!)
         do {
             // Preperation
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
         } catch _ {
         }
         do {
@@ -96,12 +113,27 @@ class countdownViewController: UIViewController {
         let error: NSError?
         do {
             audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
+            
+            beginWith = try AVAudioPlayer(contentsOfURL: beginWithSound)
+            three = try AVAudioPlayer(contentsOfURL: threeSound)
+            two = try AVAudioPlayer(contentsOfURL: twoSound)
+            one = try AVAudioPlayer(contentsOfURL: oneSound)
+            
         } catch let error1 as NSError {
             error = error1
             audioPlayer = nil
+            
+            beginWith = nil
+            three = nil
+            two = nil
+            one = nil
+            
         }
         audioPlayer!.prepareToPlay()
-        
+        beginWith!.prepareToPlay()
+        three!.prepareToPlay()
+        two!.prepareToPlay()
+        one!.prepareToPlay()
     }
     
     @IBAction func exitButton(sender: UIButton) {

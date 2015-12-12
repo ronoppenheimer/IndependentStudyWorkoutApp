@@ -86,7 +86,7 @@ class exerciseViewController: UIViewController {
         
         do {
             // Preperation
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
         } catch _ {
         }
         do {
