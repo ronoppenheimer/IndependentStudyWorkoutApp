@@ -79,7 +79,8 @@ class restViewController: UIViewController {
         if timerCount > 0 {
             timerCount -= 1
             timerLabel.text = "\(timerCount + 1)"
-            if timerCount == 5 {
+            if timerCount == 5
+            {
                 nextUp!.play()
             }
             if timerCount == 4 {
