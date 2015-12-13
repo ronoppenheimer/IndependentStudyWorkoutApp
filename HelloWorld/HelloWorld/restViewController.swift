@@ -94,6 +94,21 @@ class restViewController: UIViewController {
                 if nextUpLabel.text == "Next Up: Curved Legs Crunch"{
                     curvedLegsCrunch!.play()
                 }
+                if nextUpLabel.text == "Next Up: Leg Raise"{
+                    legRaise!.play()
+                }
+                if nextUpLabel.text == "Next Up: Side Crunch"{
+                    sideCrunch!.play()
+                }
+                if nextUpLabel.text == "Next Up: Windshield Wiper"{
+                    windshieldWiper!.play()
+                }
+                if nextUpLabel.text == "Next Up: Tucked V-Ups"{
+                    tuckedVUps!.play()
+                }
+                if nextUpLabel.text == "Next Up: Russian Twist"{
+                    russianTwist!.play()
+                }
             }
             if timerCount == 2 {
                 three!.play()
