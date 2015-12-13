@@ -75,6 +75,7 @@ class exerciseViewController: UIViewController {
         if timerCount > 0 {
             timerCount -= 1
             timerLabel.text = "\(timerCount + 1)"
+            audioPlayer?.volume = 1.5
             audioPlayer?.play()
             if timerCount == 2 {
                 three?.play()
