@@ -49,7 +49,7 @@ class countdownViewController: UIViewController {
         Timer()
         // Do any additional setup after loading the view, typically from a nib.
         progressBar.setProgress(0, animated: true)
-        beginWith!.play()
+        beginWith?.play()
         
     }
     override func viewWillAppear(animated: Bool) {
@@ -60,11 +60,7 @@ class countdownViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "goToHome") {
-            
-        }
-    }
+
     
     func Timer() {
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
@@ -84,23 +80,62 @@ class countdownViewController: UIViewController {
             timerLabel.text = "\(timerCount + 1)"
             if timerCount == 4 {
                 if nextUpLabel.text == "Next Up: Abdominal Crunch"{
-                    abdominalCrunch!.play()
+                    abdominalCrunch?.play()
                 }
                 if nextUpLabel.text == "Next Up: Scissors"{
-                    scissors!.play()
+                    scissors?.play()
                 }
                 if nextUpLabel.text == "Next Up: Curved Legs Crunch"{
-                    curvedLegsCrunch!.play()
+                    curvedLegsCrunch?.play()
+                }
+                if nextUpLabel.text == "Next Up: Leg Raise"{
+                    legRaise?.play()
+                }
+                if nextUpLabel.text == "Next Up: Side Crunch"{
+                    sideCrunch?.play()
+                }
+                if nextUpLabel.text == "Next Up: Windshield Wiper"{
+                    windshieldWiper?.play()
+                }
+                if nextUpLabel.text == "Next Up: Tucked V-Ups"{
+                    tuckedVUps?.play()
+                }
+                if nextUpLabel.text == "Next Up: Russian Twist"{
+                    russianTwist?.play()
+                }
+                if nextUpLabel.text == "Next Up: Burpees"{
+                    burpees?.play()
+                }
+                if nextUpLabel.text == "Next Up: Plank Hold"{
+                    plankHold?.play()
+                }
+                if nextUpLabel.text == "Next Up: Squats"{
+                    squats?.play()
+                }
+                if nextUpLabel.text == "Next Up: V-Ups"{
+                    vUps?.play()
+                }
+                if nextUpLabel.text == "Next Up: Running In Place"{
+                    runningInPlace?.play()
+                }
+                if nextUpLabel.text == "Next Up: Lunges"{
+                    lunges?.play()
+                }
+                if nextUpLabel.text == "Next Up: Push-Ups"{
+                    pushUps?.play()
+                }
+                if nextUpLabel.text == "Next Up: Heel Raises"{
+                    heelRaises?.play()
                 }
             }
             if timerCount == 2 {
-                three!.play()
+                three?.play()
             }
             if timerCount == 1 {
-                two!.play()
+                two?.play()
             }
             if timerCount == 0 {
-                one!.play()
+                one?.play()
             }
             let progressCount = 5 - timerCount
             let fractionalProgress = Float(progressCount) / 5
@@ -223,36 +258,36 @@ class countdownViewController: UIViewController {
             windshieldWiper = nil
             
         }
-        audioPlayer!.prepareToPlay()
-        beginWith!.prepareToPlay()
-        three!.prepareToPlay()
-        two!.prepareToPlay()
-        one!.prepareToPlay()
-        beginWith!.prepareToPlay()
-        three!.prepareToPlay()
-        two!.prepareToPlay()
-        one!.prepareToPlay()
-        rest!.prepareToPlay()
-        nextUp!.prepareToPlay()
-        goodJob!.prepareToPlay()
-        success!.prepareToPlay()
-        abdominalCrunch!.prepareToPlay()
-        burpees!.prepareToPlay()
-        curvedLegsCrunch!.prepareToPlay()
-        heelRaises!.prepareToPlay()
-        jackKnife!.prepareToPlay()
-        legRaise!.prepareToPlay()
-        lunges!.prepareToPlay()
-        plankHold!.prepareToPlay()
-        pushUps!.prepareToPlay()
-        runningInPlace!.prepareToPlay()
-        russianTwist!.prepareToPlay()
-        scissors!.prepareToPlay()
-        sideCrunch!.prepareToPlay()
-        squats!.prepareToPlay()
-        tuckedVUps!.prepareToPlay()
-        vUps!.prepareToPlay()
-        windshieldWiper!.prepareToPlay()
+        audioPlayer?.prepareToPlay()
+        beginWith?.prepareToPlay()
+        three?.prepareToPlay()
+        two?.prepareToPlay()
+        one?.prepareToPlay()
+        beginWith?.prepareToPlay()
+        three?.prepareToPlay()
+        two?.prepareToPlay()
+        one?.prepareToPlay()
+        rest?.prepareToPlay()
+        nextUp?.prepareToPlay()
+        goodJob?.prepareToPlay()
+        success?.prepareToPlay()
+        abdominalCrunch?.prepareToPlay()
+        burpees?.prepareToPlay()
+        curvedLegsCrunch?.prepareToPlay()
+        heelRaises?.prepareToPlay()
+        jackKnife?.prepareToPlay()
+        legRaise?.prepareToPlay()
+        lunges?.prepareToPlay()
+        plankHold?.prepareToPlay()
+        pushUps?.prepareToPlay()
+        runningInPlace?.prepareToPlay()
+        russianTwist?.prepareToPlay()
+        scissors?.prepareToPlay()
+        sideCrunch?.prepareToPlay()
+        squats?.prepareToPlay()
+        tuckedVUps?.prepareToPlay()
+        vUps?.prepareToPlay()
+        windshieldWiper?.prepareToPlay()
     }
     
     @IBAction func exitButton(sender: UIButton) {

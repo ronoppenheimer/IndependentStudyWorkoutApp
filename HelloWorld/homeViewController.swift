@@ -22,15 +22,15 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.pageTitles = NSArray(objects: "8 Minute Abs", "8 Minute Legs")
+        self.pageTitles = NSArray(objects: "8 Minute Abs", "8 Minute Cardio")
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
         
-        var startVC = self.viewControllerAtIndex(0) as workoutViewController
-        var viewControllers = NSArray(object: startVC)
+        let startVC = self.viewControllerAtIndex(0) as workoutViewController
+        let viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
         
         self.pageViewController.view.frame = CGRectMake(0, 100, self.view.frame.width, self.view.frame.size.height - 100)
         
@@ -48,12 +48,7 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "goToHome") {
-            
-            
-        }
-    }
+
     
     func viewControllerAtIndex(index: Int) -> workoutViewController
     {
@@ -61,7 +56,7 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
             return workoutViewController()
         }
         
-        var vc: workoutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("workoutViewController") as! workoutViewController
+        let vc: workoutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("workoutViewController") as! workoutViewController
         
         vc.titleText = self.pageTitles[index] as! String
         vc.pageIndex = index
@@ -77,7 +72,7 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
     {
         
-        var vc = viewController as! workoutViewController
+        let vc = viewController as! workoutViewController
         var index = vc.pageIndex as Int
         
         
@@ -94,7 +89,7 @@ class homeViewController: UIViewController, UIPageViewControllerDataSource {
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        var vc = viewController as! workoutViewController
+        let vc = viewController as! workoutViewController
         var index = vc.pageIndex as Int
         
         if (index == NSNotFound)

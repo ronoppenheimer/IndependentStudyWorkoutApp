@@ -58,10 +58,7 @@ class exerciseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "goToRest") {
-        }
-    }
+
     
     func Timer() {
         if timerRunning == true {
@@ -78,15 +75,15 @@ class exerciseViewController: UIViewController {
         if timerCount > 0 {
             timerCount -= 1
             timerLabel.text = "\(timerCount + 1)"
-            audioPlayer!.play()
+            audioPlayer?.play()
             if timerCount == 2 {
-                three!.play()
+                three?.play()
             }
             if timerCount == 1 {
-                two!.play()
+                two?.play()
             }
             if timerCount == 0 {
-                one!.play()
+                one?.play()
             }
             let progressCount = 10 - timerCount
             let fractionalProgress = Float(progressCount) / 10
@@ -215,36 +212,36 @@ class exerciseViewController: UIViewController {
             windshieldWiper = nil
             
         }
-        audioPlayer!.prepareToPlay()
-        beginWith!.prepareToPlay()
-        three!.prepareToPlay()
-        two!.prepareToPlay()
-        one!.prepareToPlay()
-        beginWith!.prepareToPlay()
-        three!.prepareToPlay()
-        two!.prepareToPlay()
-        one!.prepareToPlay()
-        rest!.prepareToPlay()
-        nextUp!.prepareToPlay()
-        goodJob!.prepareToPlay()
-        success!.prepareToPlay()
-        abdominalCrunch!.prepareToPlay()
-        burpees!.prepareToPlay()
-        curvedLegsCrunch!.prepareToPlay()
-        heelRaises!.prepareToPlay()
-        jackKnife!.prepareToPlay()
-        legRaise!.prepareToPlay()
-        lunges!.prepareToPlay()
-        plankHold!.prepareToPlay()
-        pushUps!.prepareToPlay()
-        runningInPlace!.prepareToPlay()
-        russianTwist!.prepareToPlay()
-        scissors!.prepareToPlay()
-        sideCrunch!.prepareToPlay()
-        squats!.prepareToPlay()
-        tuckedVUps!.prepareToPlay()
-        vUps!.prepareToPlay()
-        windshieldWiper!.prepareToPlay()
+        audioPlayer?.prepareToPlay()
+        beginWith?.prepareToPlay()
+        three?.prepareToPlay()
+        two?.prepareToPlay()
+        one?.prepareToPlay()
+        beginWith?.prepareToPlay()
+        three?.prepareToPlay()
+        two?.prepareToPlay()
+        one?.prepareToPlay()
+        rest?.prepareToPlay()
+        nextUp?.prepareToPlay()
+        goodJob?.prepareToPlay()
+        success?.prepareToPlay()
+        abdominalCrunch?.prepareToPlay()
+        burpees?.prepareToPlay()
+        curvedLegsCrunch?.prepareToPlay()
+        heelRaises?.prepareToPlay()
+        jackKnife?.prepareToPlay()
+        legRaise?.prepareToPlay()
+        lunges?.prepareToPlay()
+        plankHold?.prepareToPlay()
+        pushUps?.prepareToPlay()
+        runningInPlace?.prepareToPlay()
+        russianTwist?.prepareToPlay()
+        scissors?.prepareToPlay()
+        sideCrunch?.prepareToPlay()
+        squats?.prepareToPlay()
+        tuckedVUps?.prepareToPlay()
+        vUps?.prepareToPlay()
+        windshieldWiper?.prepareToPlay()
     }
     
     

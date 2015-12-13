@@ -35,6 +35,9 @@ class workoutViewController: UIViewController {
         if self.titleText == "8 Minute Abs"{
             performSegueWithIdentifier("goToAbs", sender: nil)
         }
+        if self.titleText == "8 Minute Cardio"{
+            performSegueWithIdentifier("goToCardio", sender: nil)
+        }
         
     }
 
