@@ -29,6 +29,7 @@ class exerciseViewController: UIViewController {
     var curvedLegsCrunch: AVAudioPlayer?
     var heelRaises: AVAudioPlayer?
     var jackKnife: AVAudioPlayer?
+    var legRaise: AVAudioPlayer?
     var lunges: AVAudioPlayer?
     var plankHold: AVAudioPlayer?
     var pushUps: AVAudioPlayer?
@@ -130,6 +131,7 @@ class exerciseViewController: UIViewController {
         let curvedLegsCrunchSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Curved Legs Crunch", ofType: "wav")!)
         let heelRaisesSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Heel Raises", ofType: "wav")!)
         let jackKnifeSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Jack Knife", ofType: "wav")!)
+        let legRaiseSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Leg Raise", ofType: "wav")!)
         let lungesSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Lunges", ofType: "wav")!)
         let plankHoldSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Plank Hold", ofType: "wav")!)
         let pushUpsSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Push-Ups", ofType: "wav")!)
@@ -169,6 +171,7 @@ class exerciseViewController: UIViewController {
             curvedLegsCrunch = try AVAudioPlayer(contentsOfURL: curvedLegsCrunchSound)
             heelRaises = try AVAudioPlayer(contentsOfURL: heelRaisesSound)
             jackKnife = try AVAudioPlayer(contentsOfURL: jackKnifeSound)
+            legRaise = try AVAudioPlayer(contentsOfURL: legRaiseSound)
             lunges = try AVAudioPlayer(contentsOfURL: lungesSound)
             plankHold = try AVAudioPlayer(contentsOfURL: plankHoldSound)
             pushUps = try AVAudioPlayer(contentsOfURL: pushUpsSound)
@@ -198,6 +201,7 @@ class exerciseViewController: UIViewController {
             curvedLegsCrunch = nil
             heelRaises = nil
             jackKnife = nil
+            legRaise = nil
             lunges = nil
             plankHold = nil
             pushUps = nil
@@ -229,6 +233,7 @@ class exerciseViewController: UIViewController {
         curvedLegsCrunch!.prepareToPlay()
         heelRaises!.prepareToPlay()
         jackKnife!.prepareToPlay()
+        legRaise!.prepareToPlay()
         lunges!.prepareToPlay()
         plankHold!.prepareToPlay()
         pushUps!.prepareToPlay()
