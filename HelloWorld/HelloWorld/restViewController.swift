@@ -15,17 +15,11 @@ class restViewController: UIViewController {
     var timerRunning = true
     var timer = NSTimer()
     
-    var audioPlayer: AVAudioPlayer?
-    var beginWith: AVAudioPlayer?
     var three: AVAudioPlayer?
     var two: AVAudioPlayer?
     var one: AVAudioPlayer?
     var rest: AVAudioPlayer?
     var nextUp: AVAudioPlayer?
-    var goodJob: AVAudioPlayer?
-    var success: AVAudioPlayer?
-    var abdominalCrunch: AVAudioPlayer?
-    var burpees: AVAudioPlayer?
     var curvedLegsCrunch: AVAudioPlayer?
     var heelRaises: AVAudioPlayer?
     var jackKnife: AVAudioPlayer?
@@ -81,9 +75,6 @@ class restViewController: UIViewController {
                 nextUp?.play()
             }
             if timerCount == 4 {
-                if nextUpLabel.text == "Next Up: Abdominal Crunch"{
-                    abdominalCrunch?.play()
-                }
                 if nextUpLabel.text == "Next Up: Scissors"{
                     scissors?.play()
                 }
@@ -104,9 +95,6 @@ class restViewController: UIViewController {
                 }
                 if nextUpLabel.text == "Next Up: Russian Twist"{
                     russianTwist?.play()
-                }
-                if nextUpLabel.text == "Next Up: Burpees"{
-                    burpees?.play()
                 }
                 if nextUpLabel.text == "Next Up: Plank Hold"{
                     plankHold?.play()
@@ -167,17 +155,11 @@ class restViewController: UIViewController {
     func playSound() {
         
         // Set the sound file name & extension
-        let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Tick", ofType: "mp3")!)
-        let beginWithSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Begin With", ofType: "wav")!)
         let threeSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("3", ofType: "wav")!)
         let twoSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("2", ofType: "wav")!)
         let oneSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("1", ofType: "wav")!)
         let restSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Rest", ofType: "wav")!)
         let nextUpSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Next Up", ofType: "wav")!)
-        let goodJobSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Good Job", ofType: "wav")!)
-        let successSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Success", ofType: "wav")!)
-        let abdominalCrunchSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Abdominal Crunch", ofType: "wav")!)
-        let burpeesSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Burpees", ofType: "wav")!)
         let curvedLegsCrunchSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Curved Legs Crunch", ofType: "wav")!)
         let heelRaisesSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Heel Raises", ofType: "wav")!)
         let jackKnifeSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Jack Knife", ofType: "wav")!)
@@ -206,18 +188,11 @@ class restViewController: UIViewController {
         // Play the sound
         let error: NSError?
         do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-            
-            beginWith = try AVAudioPlayer(contentsOfURL: beginWithSound)
             three = try AVAudioPlayer(contentsOfURL: threeSound)
             two = try AVAudioPlayer(contentsOfURL: twoSound)
             one = try AVAudioPlayer(contentsOfURL: oneSound)
             rest = try AVAudioPlayer(contentsOfURL: restSound)
             nextUp = try AVAudioPlayer(contentsOfURL: nextUpSound)
-            goodJob = try AVAudioPlayer(contentsOfURL: goodJobSound)
-            success = try AVAudioPlayer(contentsOfURL: successSound)
-            abdominalCrunch = try AVAudioPlayer(contentsOfURL: abdominalCrunchSound)
-            burpees = try AVAudioPlayer(contentsOfURL: burpeesSound)
             curvedLegsCrunch = try AVAudioPlayer(contentsOfURL: curvedLegsCrunchSound)
             heelRaises = try AVAudioPlayer(contentsOfURL: heelRaisesSound)
             jackKnife = try AVAudioPlayer(contentsOfURL: jackKnifeSound)
@@ -236,18 +211,11 @@ class restViewController: UIViewController {
             
         } catch let error1 as NSError {
             error = error1
-            audioPlayer = nil
-            
-            beginWith = nil
             three = nil
             two = nil
             one = nil
             rest = nil
             nextUp = nil
-            goodJob = nil
-            success = nil
-            abdominalCrunch = nil
-            burpees = nil
             curvedLegsCrunch = nil
             heelRaises = nil
             jackKnife = nil
@@ -265,21 +233,11 @@ class restViewController: UIViewController {
             windshieldWiper = nil
             
         }
-        audioPlayer?.prepareToPlay()
-        beginWith?.prepareToPlay()
-        three?.prepareToPlay()
-        two?.prepareToPlay()
-        one?.prepareToPlay()
-        beginWith?.prepareToPlay()
         three?.prepareToPlay()
         two?.prepareToPlay()
         one?.prepareToPlay()
         rest?.prepareToPlay()
         nextUp?.prepareToPlay()
-        goodJob?.prepareToPlay()
-        success?.prepareToPlay()
-        abdominalCrunch?.prepareToPlay()
-        burpees?.prepareToPlay()
         curvedLegsCrunch?.prepareToPlay()
         heelRaises?.prepareToPlay()
         jackKnife?.prepareToPlay()
